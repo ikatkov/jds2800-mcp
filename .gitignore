@@ -11,3 +11,5 @@ dist/
 .DS_Store
 /artifacts/*.log
 /artifacts/*.jsonl
+/artifacts/*-pipeline-status.json
+/artifacts/*-before-recovery.json

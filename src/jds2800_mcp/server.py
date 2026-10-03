@@ -11,7 +11,13 @@ from .api import API
 from .driver import Generator
 from .manual import MANUAL_URI
 from .manual import get_manual as read_manual
-from .power import CALIBRATION_URI, POWER_GUIDE_URI, get_power_guide
+from .power import (
+    CALIBRATION_URI,
+    POWER_GUIDE_URI,
+    SQUARE_CALIBRATION_URI,
+    SQUARE_POWER_GUIDE_URI,
+    get_power_guide,
+)
 from .transport import Settings, ports
 
 
@@ -23,8 +29,10 @@ def create_server(generator=None):
         "jds2800://manual resource for specifications, load/power calculations, "
         "operating notes, and tested limitations before controlling the device. "
         "Hardware sync may make CH2 follow CH1; this server does not manage sync. "
-        "For calibrated sine output into 50 ohms use get_calibration, preview_power, "
-        "and set_power. Calibration is tied to the device serial and measured cables; "
+        "For calibrated SINE or SQUARE output into 50 ohms use get_calibration, preview_power, "
+        "and set_power with waveform specified (default SINE). Square power is AC RMS "
+        "including harmonics within scope bandwidth, excluding DC; not fundamental-only power. "
+        "Calibration is tied to the device serial and measured cables; "
         "it requires a physical 50-ohm load, and requests outside the table fail. "
         "Units are Hz, V peak-to-peak, "
         "V DC offset, percent duty, and degrees. Configure does not enable an off output "
@@ -66,6 +74,15 @@ def create_server(generator=None):
         return json.dumps(api.call("get_calibration"), indent=2)
 
     @app.resource(
+        SQUARE_CALIBRATION_URI,
+        name="JDS2800 square power calibration",
+        description="Measured 50-ohm 50%-duty square AC RMS power, including harmonics.",
+        mime_type="application/json",
+    )
+    def square_calibration_resource() -> str:
+        return json.dumps(api.call("get_calibration", {"waveform": "SQUARE"}), indent=2)
+
+    @app.resource(
         POWER_GUIDE_URI,
         name="JDS2800 dBm guide",
         description="Calibration conditions, measured tables, dBm examples, and uncertainty notes.",
@@ -74,21 +91,42 @@ def create_server(generator=None):
     def power_guide_resource() -> str:
         return get_power_guide()
 
-    @app.tool(annotations=read_only)
-    def get_calibration(channel: Literal[1, 2] | None = None, include_points: bool = False) -> dict:
-        """Read measured power calibration metadata/ranges without opening a port.
-        include_points=true also returns the full amplitude/frequency measurement table.
-        Applies to zero-offset SINE into a physical 50-ohm load through measured cables.
-        """
-        return api.power.get_calibration(channel, include_points)
+    @app.resource(
+        SQUARE_POWER_GUIDE_URI,
+        name="JDS2800 square dBm guide",
+        description="Square AC RMS power definition, measured table, verification and bandwidth limits.",
+        mime_type="text/markdown",
+    )
+    def square_power_guide_resource() -> str:
+        return get_power_guide("SQUARE")
 
     @app.tool(annotations=read_only)
-    def preview_power(channel: Literal[1, 2], frequency_hz: float, power_dbm: float) -> dict:
-        """Check generator identity and calculate calibrated voltage for sine power
+    def get_calibration(
+        channel: Literal[1, 2] | None = None,
+        include_points: bool = False,
+        waveform: Literal["SINE", "SQUARE"] = "SINE",
+    ) -> dict:
+        """Read measured power calibration metadata/ranges without opening a port.
+        include_points=true also returns the full amplitude/frequency measurement table.
+        Select SINE (default) or SQUARE; separate measured tables are required.
+        Applies to zero-offset, 50% duty into a physical 50-ohm load through measured cables.
+        Square dBm is AC RMS including measured harmonics, excluding DC, not fundamental power.
+        """
+        return api.power.get_calibration(channel, include_points, waveform)
+
+    @app.tool(annotations=read_only)
+    def preview_power(
+        channel: Literal[1, 2],
+        frequency_hz: float,
+        power_dbm: float,
+        waveform: Literal["SINE", "SQUARE"] = "SINE",
+    ) -> dict:
+        """Check generator identity and calculate calibrated voltage for SINE or SQUARE power
         into 50 ohms. Interpolates measured levels/frequencies; no extrapolation or writes.
         Returns predicted power after 1 mV amplitude quantization, not a live measurement.
+        Square dBm is AC RMS including measured harmonics, not fundamental-only power.
         """
-        return api.power.preview_power(channel, frequency_hz, power_dbm)
+        return api.power.preview_power(channel, frequency_hz, power_dbm, waveform)
 
     @app.tool(annotations=writing)
     def set_power(
@@ -96,14 +134,17 @@ def create_server(generator=None):
         frequency_hz: float,
         power_dbm: float,
         enabled: bool | None = None,
+        waveform: Literal["SINE", "SQUARE"] = "SINE",
     ) -> dict:
-        """Set calibrated sine power into a physical 50-ohm load using the measured table.
-        Sets waveform=SINE, DC offset=0, duty=50, and frequency/amplitude. Requires wave
+        """Set calibrated SINE or SQUARE power into a physical 50-ohm load using its own table.
+        Sets the selected waveform (default SINE), DC offset=0, duty=50, frequency/amplitude.
+        Square dBm is AC RMS including harmonics within scope bandwidth, excluding DC;
+        it is not fundamental-only power. Requires wave
         mode and matching serial number. Preserves enabled state unless supplied.
-        Predicted dBm includes measured cable loss; other loads/waveforms are unsupported.
+        Predicted dBm includes measured cable loss; CMOS, other loads and duty cycles unsupported.
         Uses register readback; it does not remeasure the signal with the scope.
         """
-        return api.power.set_power(channel, frequency_hz, power_dbm, enabled)
+        return api.power.set_power(channel, frequency_hz, power_dbm, enabled, waveform)
 
     @app.tool(annotations=read_only)
     def list_ports() -> list[dict]:

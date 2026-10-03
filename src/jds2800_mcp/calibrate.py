@@ -1,4 +1,4 @@
-"""Measure sine power through the JDS2800 and Rigol stdio MCP servers."""
+"""Measure waveform power through the JDS2800 and Rigol stdio MCP servers."""
 
 import argparse
 import asyncio
@@ -81,6 +81,7 @@ async def measure(scope, channel, frequency_hz, repeats=3):
             raise RuntimeError(f"Invalid AC RMS measurement: {reading}")
         reading["vrms_ac_v"] = math.sqrt(squared)
         reading["measured_dbm"] = 10 * math.log10(squared / 50 / 0.001)
+        reading["total_power_dbm"] = 10 * math.log10(reading["VRMS"] ** 2 / 50 / 0.001)
         reading["vpp_sine_dbm"] = 10 * math.log10(reading["VPP"] ** 2 / (8 * 50) / 0.001)
         measurements.append(reading)
         await asyncio.sleep(0.1)
@@ -89,6 +90,8 @@ async def measure(scope, channel, frequency_hz, repeats=3):
         "measured_dbm": statistics.median(r["measured_dbm"] for r in measurements),
         "vpp_v": statistics.median(r["VPP"] for r in measurements),
         "dc_v": statistics.median(r["VAVG"] for r in measurements),
+        "vrms_total_v": statistics.median(r["VRMS"] for r in measurements),
+        "total_power_dbm": statistics.median(r["total_power_dbm"] for r in measurements),
         "vpp_sine_dbm": statistics.median(r["vpp_sine_dbm"] for r in measurements),
         "frequency_measured_hz": statistics.median(r["FREQuency"] for r in measurements),
         "repeatability_db": max(r["measured_dbm"] for r in measurements)
@@ -126,10 +129,16 @@ async def collect(args):
         )
     frequencies = sorted(args.frequencies or FREQUENCIES)
     amplitudes = sorted(args.amplitudes or AMPLITUDES)
+    waveform = getattr(args, "waveform", "SINE")
+    if waveform not in ("SINE", "SQUARE"):
+        raise ValueError(
+            "Power-table collection supports SINE or SQUARE; characterize CMOS separately"
+        )
+    limit = 15e6
     if len(set(frequencies)) != len(frequencies) or len(set(amplitudes)) != len(amplitudes):
         raise ValueError("Calibration frequencies and amplitudes must be unique")
-    if not all(1e6 <= f <= 15e6 for f in frequencies):
-        raise ValueError("Calibration frequencies must be in 1..15 MHz")
+    if not all(1e6 <= f <= limit for f in frequencies):
+        raise ValueError(f"{waveform} calibration frequencies must be in 1..{limit / 1e6:g} MHz")
     if not all(0.02 <= a <= 5 for a in amplitudes):
         raise ValueError("Calibration amplitudes must be in 0.02..5 Vpp")
     measurement_plan = {
@@ -145,8 +154,10 @@ async def collect(args):
         "created_at": datetime.now(timezone.utc).isoformat(),
         "load_ohms": 50,
         "load_description": "External 50-ohm terminations at scope CH1 and CH3; operator confirmed",
-        "waveform": "SINE",
+        "waveform": waveform,
         "offset_v": 0,
+        "duty_percent": 50,
+        "power_metric": "AC_RMS_INCLUDING_HARMONICS",
         "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
         "method": f"Median of AC RMS = sqrt(VRMS^2 - VAVG^2); scope acquisition {args.acquire_type}",
         "measurement_plan": measurement_plan,
@@ -161,6 +172,8 @@ async def collect(args):
                 "Resume requires the original measurement grid and acquisition settings"
             )
         document.pop("error", None)
+        if document["waveform"] != waveform:
+            raise ValueError("Resume requires the original waveform")
     async with AsyncExitStack() as stack:
         env = dict(os.environ)
         generator = await connect(
@@ -182,7 +195,8 @@ async def collect(args):
         if document["device"]["device_type"] != 15:
             raise ValueError("This calibration procedure is for the attached 15 MHz unit")
         document["calibration_id"] = (
-            f"jds2800-{document['device']['serial_number']}-50ohm-{document['created_at']}"
+            f"jds2800-{document['device']['serial_number']}-{waveform.lower()}-50ohm-"
+            f"{document['created_at']}"
         )
         document["initial_state"] = await call(generator, "get_state")
         scope_info = await call(scope, "scope_info")
@@ -214,11 +228,19 @@ async def collect(args):
                     f":ACQ:TYPE {args.acquire_type}",
                     ":ACQ:AVER 16",
                     ":TRIG:EDG:LEV 0",
+                    ":TRIG:COUP DC",
                     ":TRIG:EDG:SLOP POS",
                     ":TRIG:SWE AUTO",
                     ":RUN",
                 ],
             )
+            # Deep memory left over from frequency-ratio measurements needlessly
+            # slows automatic voltage measurements. Keep full sample rate while
+            # retaining many RF cycles for each numeric measurement.
+            document["acquisition_memory"] = await call(
+                scope, "set_acquire", {"mem_depth": "60000"}
+            )
+            document["measurement_scope_info"] = await call(scope, "scope_info")
             completed = sum(
                 len(curve["points"])
                 for ch in document["channels"].values()
@@ -250,7 +272,7 @@ async def collect(args):
                             "configure_channel",
                             {
                                 "channel": channel,
-                                "waveform": "SINE",
+                                "waveform": waveform,
                                 "frequency_hz": frequency,
                                 "amplitude_vpp": amplitude,
                                 "offset_v": 0,
@@ -273,6 +295,7 @@ async def collect(args):
                         ):
                             raise RuntimeError("Measured power is not monotonic with amplitude")
                         point.update(setting_vpp=state["amplitude_vpp"], scope_scale_v_div=scale)
+                        point["measured_at"] = datetime.now(timezone.utc).isoformat()
                         curve["points"].append(point)
                         completed += 1
                         save(args.out, document)
@@ -311,6 +334,7 @@ def main():
     parser.add_argument("--resume", action="store_true")
     parser.add_argument("--frequencies", type=float, nargs="+")
     parser.add_argument("--amplitudes", type=float, nargs="+")
+    parser.add_argument("--waveform", choices=("SINE", "SQUARE"), default="SINE")
     parser.add_argument("--repeats", type=int, default=3)
     parser.add_argument("--settle", type=float, default=0.6)
     parser.add_argument("--acquire-type", choices=("NORM", "AVER"), default="NORM")

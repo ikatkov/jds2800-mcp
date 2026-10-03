@@ -11,7 +11,12 @@ from mcp.client.stdio import stdio_client
 from jds2800_mcp.api import API
 from jds2800_mcp.cli import BatchError, parser, run
 from jds2800_mcp.manual import MANUAL_URI, get_manual
-from jds2800_mcp.power import CALIBRATION_URI, POWER_GUIDE_URI, get_power_guide
+from jds2800_mcp.power import (
+    CALIBRATION_URI,
+    POWER_GUIDE_URI,
+    SQUARE_CALIBRATION_URI,
+    get_power_guide,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -91,7 +96,13 @@ def test_cli_manual_available_without_generator():
     assert result.stderr == ""
 
 
-def test_mcp_handshake_discovery_and_structured_errors(calibration_file):
+def test_mcp_handshake_discovery_and_structured_errors(calibration_file, tmp_path, monkeypatch):
+    square = json.loads(calibration_file.read_text())
+    square.update(waveform="SQUARE", duty_percent=50, power_metric="AC_RMS_INCLUDING_HARMONICS")
+    square_path = tmp_path / "square-calibration.json"
+    square_path.write_text(json.dumps(square))
+    monkeypatch.setenv("JDS2800_SQUARE_CALIBRATION", str(square_path))
+
     async def check():
         params = StdioServerParameters(
             command=sys.executable,
@@ -106,6 +117,11 @@ def test_mcp_handshake_discovery_and_structured_errors(calibration_file):
                 assert "get_manual" in init.instructions
                 listing = await client.list_tools()
                 assert len(listing.tools) == 17
+                for name in ("get_calibration", "preview_power", "set_power"):
+                    tool = next(t for t in listing.tools if t.name == name)
+                    selector = tool.inputSchema["properties"]["waveform"]
+                    assert selector["enum"] == ["SINE", "SQUARE"]
+                    assert selector["default"] == "SINE"
                 read = next(t for t in listing.tools if t.name == "get_state")
                 assert read.annotations.readOnlyHint
                 manual = next(t for t in listing.tools if t.name == "get_manual")
@@ -128,6 +144,18 @@ def test_mcp_handshake_discovery_and_structured_errors(calibration_file):
                 assert (
                     json.loads(document.contents[0].text)["calibration_id"] == "synthetic-test-only"
                 )
+                result = await client.call_tool("get_calibration", {"waveform": "SQUARE"})
+                assert not result.isError
+                square_metadata = result.structuredContent or json.loads(result.content[0].text)
+                assert square_metadata["waveform"] == "SQUARE"
+                assert square_metadata["power_metric"] == "AC_RMS_INCLUDING_HARMONICS"
+                document = await client.read_resource(SQUARE_CALIBRATION_URI)
+                assert json.loads(document.contents[0].text)["waveform"] == "SQUARE"
+                result = await client.call_tool(
+                    "set_power",
+                    {"channel": 1, "frequency_hz": 1e6, "power_dbm": 0, "waveform": "CMOS"},
+                )
+                assert result.isError
                 result = await client.call_tool(
                     "preview_power",
                     {

@@ -77,9 +77,9 @@ The server implements 17 tools:
 | Tool | Purpose |
 | --- | --- |
 | `get_manual` | Bundled specifications, operating notes and verified limitations |
-| `get_calibration` | Per-channel measured 50-ohm sine power table and valid ranges |
+| `get_calibration` | Separate measured 50-ohm SINE/SQUARE power tables and valid ranges |
 | `preview_power` | Check device identity and calculate voltage for requested dBm |
-| `set_power` | Configure calibrated sine power into a physical 50-ohm load |
+| `set_power` | Configure calibrated SINE/SQUARE AC RMS power into a physical 50-ohm load |
 | `list_ports` | Find USB serial ports without opening them |
 | `list_waveforms` | Built-in names/IDs and arbitrary slots |
 | `get_device_info` | Model code, serial, port and frequency limit |
@@ -168,6 +168,37 @@ back; the error includes their results and the failing entry's zero-based index.
 
 ## Calibrated sine output in dBm
 
+### Calibrated square output
+
+`get_calibration`, `preview_power`, and `set_power` also accept `waveform="SQUARE"`.
+The default remains `SINE`. Square output uses its own measured per-channel profile,
+never the sine table or a theoretical +3 dB conversion. For example, an MCP call is:
+
+```json
+{"channel":1,"frequency_hz":10000000,"power_dbm":7,"waveform":"SQUARE","enabled":true}
+```
+
+Square power means **AC RMS power including harmonics within the scope's bandwidth**,
+with the measured DC component removed. It is not fundamental-only RF power.
+The output is configured for 50% duty and zero requested DC offset. Physical 50-ohm
+termination and the measured cable setup are required. `get_calibration(waveform="SQUARE")`
+reports the supported range and verification results; out-of-range requests fail before writes.
+CMOS/PULSE and other duty cycles do not have calibrated dBm controls.
+
+```sh
+./jds2800 calibration --waveform SQUARE
+./jds2800 preview-power 1 --frequency-hz 10000000 --dbm 7 --waveform SQUARE
+./jds2800 power 1 --frequency-hz 10000000 --dbm 7 --waveform SQUARE --enabled on
+```
+
+The square profile is bundled separately as `data/square-calibration.json` and
+exposed at `jds2800://calibration/square`. A measured override uses
+`JDS2800_SQUARE_CALIBRATION`; `JDS2800_CALIBRATION` continues to select the sine profile.
+See [the square measurement guide](src/jds2800_mcp/docs/JDS2800-square-calibration.md).
+Existing MCP clients must reconnect to discover the new waveform argument.
+
+### Existing sine profile
+
 The bundled [power calibration](src/jds2800_mcp/docs/JDS2800-power-calibration.md)
 is for this **15 MHz generator, serial 1816400000**, with separate tables for
 CH1 and CH2. It uses external 50-ohm terminations at Rigol CH1/CH3 through the
@@ -223,7 +254,8 @@ The checked-in data are validated against independent frequency/level requests
 by `scripts/verify_power.py`. This is a scope-referenced correction; absolute
 accuracy still depends on the scope, terminations, cables, and operating conditions.
 The RMS measurement includes harmonics and noise rather than isolating the RF
-fundamental. Sine power calibration does not apply to square/pulse/noise outputs.
+fundamental. Sine power calibration does not apply to square/pulse/noise outputs;
+square output has the separate measured profile described above.
 
 Scope readings come from numeric measurement queries. The collector clears previous
 measurements before each reading, retains Vpp, and derives AC power from RMS with

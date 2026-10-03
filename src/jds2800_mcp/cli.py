@@ -29,11 +29,15 @@ def parser():
     calibration = sub.add_parser("calibration", help="Read 50-ohm power calibration metadata/table")
     calibration.add_argument("--channel", type=int, choices=(1, 2))
     calibration.add_argument("--include-points", action="store_true")
+    calibration.add_argument("--waveform", choices=("SINE", "SQUARE"), default="SINE")
     for name in ("power", "preview-power"):
-        power = sub.add_parser(name, help="Calibrated zero-offset sine power into 50 ohms")
+        power = sub.add_parser(
+            name, help="Calibrated zero-offset SINE/SQUARE AC power into 50 ohms"
+        )
         power.add_argument("channel", type=int, choices=(1, 2))
         power.add_argument("--frequency-hz", type=float, required=True)
         power.add_argument("--dbm", dest="power_dbm", type=float, required=True)
+        power.add_argument("--waveform", choices=("SINE", "SQUARE"), default="SINE")
         if name == "power":
             power.add_argument("--enabled", type=boolean)
     state = sub.add_parser("state")

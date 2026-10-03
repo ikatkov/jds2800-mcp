@@ -1,5 +1,12 @@
 # Measured JDS2800 sine power calibration
 
+This guide describes the SINE profile, still the default. Square output uses its
+own measured profile: pass `waveform="SQUARE"` to `get_calibration`, `preview_power`,
+or `set_power`. Read `jds2800://square-power-guide` for its numeric scope measurements,
+verification, and AC RMS power definition. The sine table must not be reused for square
+or CMOS output. Square AC power includes harmonics within the scope bandwidth and
+does not mean power in the fundamental alone or infinite-bandwidth total power.
+
 Device: **JDS2800-15M, serial 1816400000**. Measured October 3, 2026.
 Generator CH1 feeds Rigol CH1; generator CH2 feeds Rigol CH3 through the existing
 coax cables. External **50-ohm terminations were attached at both scope inputs**,

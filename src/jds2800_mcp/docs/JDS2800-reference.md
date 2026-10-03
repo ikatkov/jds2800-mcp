@@ -11,6 +11,9 @@ For the subsequently measured **50-ohm sine power calibration**, see
 `power` to request dBm over the measured 1–15 MHz range. Those controls use separate
 channel tables and match the generator serial; the earlier maximum-power estimates
 below remain conditional and are outside the measured power-control range.
+For measured **square AC RMS power including harmonics**, select `waveform="SQUARE"`
+and read `JDS2800-square-calibration.md` / `jds2800://square-power-guide`.
+Its separate table covers 1–15 MHz, zero requested offset and 50% duty into 50 ohms.
 
 ## Source and provenance
 
@@ -203,11 +206,27 @@ have not been measured with a 50 Ω termination; source impedance tolerance,
 amplitude flatness, and loading can change the result. The ambiguous 30 MHz
 boundary does not affect this 15 MHz unit.
 
-For a symmetric zero-offset square wave, total power is `Vpp_load^2 / (4 * R)`:
+For an ideal symmetric zero-offset square wave, total power is `Vpp_load^2 / (4 * R)`:
 10 Vpp into 50 Ω would be 0.5 W or +26.99 dBm **including harmonics**. It is not
 the same as sine power or power in the fundamental alone. With DC offset, total
 load dissipation includes the additional `Vdc_load^2 / R` term. Neither example
 establishes the generator's loaded output capability.
+
+### Measured square-wave power control
+
+Square output has a separate measured per-channel 50-ohm profile; the sine profile
+must not be reused or converted by adding a theoretical 3 dB. Use
+`get_calibration(waveform="SQUARE")`, then `preview_power` and `set_power` with the
+same waveform argument. Omitting waveform retains the existing SINE default.
+The square table requires this generator serial, the measured cables, a physical
+50-ohm load, zero requested DC offset, and 50% duty. Requests outside measured
+frequency or level coverage fail before writes.
+
+Square dBm means AC RMS power including harmonics within the scope bandwidth,
+with measured DC removed. It is not power in the fundamental alone. Numeric scope
+VRMS/VAVG/Vpp readings supply the calibration; the grid is never used to infer voltage.
+See `JDS2800-square-calibration.md` for coverage, raw evidence, and independent checks.
+CMOS and PULSE have no calibrated dBm table and must not use either waveform profile.
 
 ## Modes, external input, and stored settings
 

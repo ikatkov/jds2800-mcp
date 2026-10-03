@@ -22,6 +22,13 @@ def evidence_path(path):
 def build(sources, output, verification=None):
     documents = [json.loads(path.read_text()) for path in sources]
     profile = copy.deepcopy(documents[0])
+    if "RIGOL TECHNOLOGIES,DS1104Z," in profile["scope_info"]:
+        profile["scope_analog_bandwidth_hz"] = 100e6
+    profile["power_definition"] = (
+        "AC RMS power calculated from numeric scope VRMS and VAVG into 50 ohms. "
+        "Includes harmonics passed by the scope analog response; excludes DC. "
+        "Not fundamental-only power or infinite-bandwidth total power."
+    )
     profile["channels"] = {str(c): {"scope_channel": s, "curves": []} for c, s in ((1, 1), (2, 3))}
     profile["raw_measurements_sources"] = []
     methods = []
@@ -39,6 +46,9 @@ def build(sources, output, verification=None):
                 raise ValueError(f"Measurement conditions differ for {key}: {path}")
         if document["scope_info"].splitlines()[0] != documents[0]["scope_info"].splitlines()[0]:
             raise ValueError(f"Scope identity differs: {path}")
+        for key in ("duty_percent", "power_metric"):
+            if document.get(key) != documents[0].get(key):
+                raise ValueError(f"Measurement conditions differ for {key}: {path}")
         acquisition = document.get("measurement_plan", {}).get("acquisition", "AVER16")
         methods.append(acquisition)
         profile["raw_measurements_sources"].append(
@@ -64,6 +74,10 @@ def build(sources, output, verification=None):
                     if any(p["setting_vpp"] == raw["setting_vpp"] for p in curve["points"]):
                         raise ValueError("Duplicate frequency/amplitude measurement")
                     point = {k: v for k, v in raw.items() if k != "readings"}
+                    if profile["waveform"] == "SQUARE":
+                        # The sine Vpp cross-check is a diagnostic in raw evidence,
+                        # not a valid square power value to expose in its profile.
+                        point.pop("vpp_sine_dbm", None)
                     point["acquisition"] = acquisition
                     curve["points"].append(point)
     for channel in profile["channels"].values():
@@ -87,8 +101,9 @@ def build(sources, output, verification=None):
     source_digest = hashlib.sha256(
         "".join(s["original_sha256"] for s in profile["raw_measurements_sources"]).encode()
     ).hexdigest()[:12]
+    waveform_tag = "-square" if profile["waveform"] == "SQUARE" else ""
     profile["calibration_id"] = (
-        f"jds2800-{profile['device']['serial_number']}-50ohm-{source_digest}"
+        f"jds2800-{profile['device']['serial_number']}{waveform_tag}-50ohm-{source_digest}"
     )
     profile["method"] = (
         "Median of three numeric scope readings; AC RMS = sqrt(VRMS^2 - VAVG^2). "

@@ -28,6 +28,8 @@ async def check_cli(gen, scope, args, env, report):
         "14500000",
         "--dbm",
         "10",
+        "--waveform",
+        args.waveform,
         env=env,
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE,
@@ -67,7 +69,8 @@ async def verify(args):
         "tolerance_db": args.tolerance_db,
         "measurement_method": "Clear prior measurements; query numeric VRMS/VAVG/frequency/Vpp three times",
     }
-    env = dict(os.environ) | {"JDS2800_CALIBRATION": str(args.calibration.resolve())}
+    variable = "JDS2800_CALIBRATION" if args.waveform == "SINE" else "JDS2800_SQUARE_CALIBRATION"
+    env = dict(os.environ) | {variable: str(args.calibration.resolve())}
     async with AsyncExitStack() as stack:
         gen = await connect(
             stack,
@@ -81,11 +84,12 @@ async def verify(args):
             [str(args.rigol_server)],
             env | {"RIGOL_HOST": args.scope_host, "RIGOL_TIMEOUT": "10"},
         )
-        report["calibration"] = await call(gen, "get_calibration")
+        report["calibration"] = await call(gen, "get_calibration", {"waveform": args.waveform})
+        report["waveform"] = args.waveform
         try:
             # Averaging can smear RF traces at some scale/trigger combinations.
             # Validate independently with normal acquisition and repeated readings.
-            await write_scope(scope, [":ACQ:TYPE NORM", ":TRIG:EDG:COUP DC"])
+            await write_scope(scope, [":ACQ:TYPE NORM", ":TRIG:COUP DC"])
             report["acquisition"] = "NORM"
             await call(gen, "stop_outputs")
             await call(gen, "set_mode", {"mode": "WAVE_CH1"})
@@ -95,7 +99,11 @@ async def verify(args):
                 cases = [
                     (f * 1e6, p)
                     for f in (1.5, 5.5, 9.5, 10.5, 14.5)
-                    for p in (-25, -16, -7, 0, 7, 10)
+                    for p in (
+                        (-26.5, -25, -16, -7, 0, 7, 10, 13)
+                        if args.waveform == "SQUARE"
+                        else (-25, -16, -7, 0, 7, 10)
+                    )
                 ]
                 cases += [(f * 1e6, 0) for f in (1, 10, 10.005, 15)]
                 for frequency, power in cases:
@@ -106,6 +114,7 @@ async def verify(args):
                             "channel": channel,
                             "frequency_hz": frequency,
                             "power_dbm": power,
+                            "waveform": args.waveform,
                         },
                     )
                     await write_scope(
@@ -123,6 +132,7 @@ async def verify(args):
                             "frequency_hz": frequency,
                             "power_dbm": power,
                             "enabled": True,
+                            "waveform": args.waveform,
                         },
                     )
                     await asyncio.sleep(0.8)
@@ -164,6 +174,7 @@ async def verify(args):
                             "channel": channel,
                             "frequency_hz": frequency,
                             "power_dbm": power,
+                            "waveform": args.waveform,
                         },
                     )
                     scope_channel = 1 if channel == 1 else 3
@@ -182,6 +193,7 @@ async def verify(args):
                             "frequency_hz": frequency,
                             "power_dbm": power,
                             "enabled": True,
+                            "waveform": args.waveform,
                         },
                     )
                 await asyncio.sleep(1)
@@ -234,5 +246,6 @@ if __name__ == "__main__":
     parser.add_argument("--rigol-server", type=Path, required=True)
     parser.add_argument("--calibration", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument("--waveform", choices=("SINE", "SQUARE"), default="SINE")
     parser.add_argument("--tolerance-db", type=float, default=0.35)
     asyncio.run(verify(parser.parse_args()))

@@ -133,3 +133,74 @@ def test_cli_power_preview_and_table(generator, calibration):
     assert result["state"]["enabled"] is True
     summary = run(api, parser().parse_args(["calibration", "--channel", "2"]))
     assert set(summary["channels"]) == {"2"}
+
+
+def square_calibration(document):
+    document = copy.deepcopy(document)
+    document.update(waveform="SQUARE", duty_percent=50, power_metric="AC_RMS_INCLUDING_HARMONICS")
+    for channel in document["channels"].values():
+        for curve in channel["curves"]:
+            for point in curve["points"]:
+                point["vrms_ac_v"] *= math.sqrt(2)
+                point["measured_dbm"] += 10 * math.log10(2)
+    return Calibration(document)
+
+
+def test_square_power_uses_its_table_and_sets_square(generator, calibration_document):
+    calibration = square_calibration(calibration_document)
+    power = PowerController(generator, calibration)
+    result = power.set_power(1, 1e6, 0, enabled=True, waveform="SQUARE")
+    assert result["state"]["waveform"] == "SQUARE"
+    assert result["state"]["offset_v"] == 0
+    assert result["state"]["duty_percent"] == 50
+    assert result["state"]["enabled"] is True
+    assert result["power_metric"] == "AC_RMS_INCLUDING_HARMONICS"
+    assert result["state"]["amplitude_vpp"] == calibration.plan(1, 1e6, 0)["amplitude_vpp"]
+    assert result["state"]["amplitude_vpp"] == 0.894
+
+
+@pytest.mark.parametrize("waveform", ["SQUARE", "CMOS", "PULSE", None])
+def test_sine_table_cannot_be_used_for_other_waveforms(generator, calibration, waveform):
+    with pytest.raises(CalibrationError):
+        PowerController(generator, calibration).set_power(1, 1e6, 0, waveform=waveform)
+    assert generator.io.writes == []
+
+
+def test_square_table_cannot_silently_replace_sine(generator, calibration_document):
+    calibration = square_calibration(calibration_document)
+    with pytest.raises(CalibrationError, match="Cannot use SQUARE"):
+        PowerController(generator, calibration).set_power(1, 1e6, 0)
+    assert generator.io.writes == []
+
+
+def test_square_override_is_separate_from_sine(monkeypatch, tmp_path, calibration_document):
+    import json
+
+    sine_path = tmp_path / "sine.json"
+    square_path = tmp_path / "square.json"
+    sine_path.write_text(json.dumps(calibration_document))
+    square_path.write_text(json.dumps(square_calibration(calibration_document).document))
+    monkeypatch.setenv("JDS2800_CALIBRATION", str(sine_path))
+    monkeypatch.setenv("JDS2800_SQUARE_CALIBRATION", str(square_path))
+    assert Calibration.load().document["waveform"] == "SINE"
+    assert Calibration.load("SQUARE").document["waveform"] == "SQUARE"
+    monkeypatch.setenv("JDS2800_SQUARE_CALIBRATION", str(sine_path))
+    with pytest.raises(CalibrationError, match="Cannot use SINE"):
+        Calibration.load("SQUARE")
+
+
+@pytest.mark.parametrize("key,value", [("duty_percent", 30), ("power_metric", "FUNDAMENTAL")])
+def test_square_calibration_rejects_wrong_duty_or_power_metric(calibration_document, key, value):
+    document = square_calibration(calibration_document).document
+    document[key] = value
+    with pytest.raises(CalibrationError):
+        Calibration(document)
+
+
+def test_square_cli_and_api(generator, calibration_document):
+    api = API(generator, square_calibration(calibration_document))
+    args = parser().parse_args(
+        ["power", "2", "--frequency-hz", "1000000", "--dbm", "0", "--waveform", "SQUARE"]
+    )
+    assert run(api, args)["state"]["waveform"] == "SQUARE"
+    assert api.call("get_calibration", {"waveform": "SQUARE"})["waveform"] == "SQUARE"

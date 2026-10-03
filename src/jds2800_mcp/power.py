@@ -1,4 +1,4 @@
-"""Per-instrument, per-channel sine power from measured 50-ohm calibration."""
+"""Per-instrument, per-channel waveform power from measured 50-ohm calibration."""
 
 import bisect
 import json
@@ -11,14 +11,23 @@ from .driver import channel_number, number
 
 CALIBRATION_URI = "jds2800://calibration"
 POWER_GUIDE_URI = "jds2800://power-guide"
+SQUARE_CALIBRATION_URI = "jds2800://calibration/square"
+SQUARE_POWER_GUIDE_URI = "jds2800://square-power-guide"
+POWER_METRIC = "AC_RMS_INCLUDING_HARMONICS"
 
 
-def get_power_guide():
-    return (
-        files("jds2800_mcp")
-        .joinpath("docs", "JDS2800-power-calibration.md")
-        .read_text(encoding="utf-8")
+def calibrated_waveform(value):
+    if not isinstance(value, str) or value.upper() not in ("SINE", "SQUARE"):
+        raise CalibrationError("Calibrated power supports only SINE or SQUARE")
+    return value.upper()
+
+
+def get_power_guide(waveform="SINE"):
+    waveform = calibrated_waveform(waveform)
+    filename = (
+        "JDS2800-power-calibration.md" if waveform == "SINE" else "JDS2800-square-calibration.md"
     )
+    return files("jds2800_mcp").joinpath("docs", filename).read_text(encoding="utf-8")
 
 
 class CalibrationError(ValueError):
@@ -44,19 +53,20 @@ class Calibration:
             raise CalibrationError(f"Invalid calibration: {exc}") from exc
 
     @classmethod
-    def load(cls):
-        override = os.environ.get("JDS2800_CALIBRATION")
-        path = (
-            Path(override)
-            if override
-            else files("jds2800_mcp").joinpath("data", "calibration.json")
-        )
+    def load(cls, waveform="SINE"):
+        waveform = calibrated_waveform(waveform)
+        variable = "JDS2800_CALIBRATION" if waveform == "SINE" else "JDS2800_SQUARE_CALIBRATION"
+        override = os.environ.get(variable)
+        filename = "calibration.json" if waveform == "SINE" else "square-calibration.json"
+        path = Path(override) if override else files("jds2800_mcp").joinpath("data", filename)
         try:
-            return cls(json.loads(path.read_text(encoding="utf-8")))
+            calibration = cls(json.loads(path.read_text(encoding="utf-8")))
+            calibration.require_waveform(waveform)
+            return calibration
         except (OSError, json.JSONDecodeError) as exc:
             raise CalibrationError(
-                "No readable power calibration. Measure both channels into 50 ohms; "
-                "select the resulting JSON with JDS2800_CALIBRATION."
+                f"No readable {waveform} power calibration. Measure both channels into 50 ohms; "
+                f"select the resulting JSON with {variable}."
             ) from exc
 
     def _validate(self):
@@ -67,11 +77,19 @@ class Calibration:
         if (
             doc["schema_version"] != 1
             or doc["status"] != "measured"
-            or doc["waveform"] != "SINE"
+            or doc["waveform"] not in ("SINE", "SQUARE")
             or doc["offset_v"] != 0
             or doc["load_ohms"] != 50
         ):
-            raise ValueError("Requires completed schema-1 sine/zero-offset/50-ohm measurements")
+            raise ValueError(
+                "Requires completed schema-1 SINE/SQUARE zero-offset/50-ohm measurements"
+            )
+        if doc["waveform"] == "SQUARE" and (
+            doc.get("duty_percent") != 50 or doc.get("power_metric") != POWER_METRIC
+        ):
+            raise ValueError(
+                "Square calibration requires 50% duty and explicit AC RMS power metric"
+            )
         if (
             type(doc["device"]["serial_number"]) is not int
             or doc["device"]["serial_number"] < 0
@@ -123,6 +141,12 @@ class Calibration:
                 f"{expected['serial_number']}; connected generator is serial {info['serial_number']}"
             )
 
+    def require_waveform(self, waveform):
+        if self.document["waveform"] != waveform:
+            raise CalibrationError(
+                f"Cannot use {self.document['waveform']} calibration for {waveform} output"
+            )
+
     def summary(self, channel=None, include_points=False):
         if channel is not None:
             channel_number(channel)
@@ -141,9 +165,15 @@ class Calibration:
             )
         }
         result["channels"] = {}
-        result["guide_uri"] = POWER_GUIDE_URI
+        result["guide_uri"] = (
+            POWER_GUIDE_URI if doc["waveform"] == "SINE" else SQUARE_POWER_GUIDE_URI
+        )
+        result["power_metric"] = POWER_METRIC
+        result["duty_percent"] = 50
+        result["scope_analog_bandwidth_hz"] = doc.get("scope_analog_bandwidth_hz")
         result["limitations"] = (
-            "Scope-referenced AC power of a sine wave into physical 50-ohm loads. "
+            f"Scope-referenced AC RMS power of {doc['waveform']} into physical 50-ohm loads. "
+            "Includes harmonics within the scope bandwidth and excludes DC. "
             "Includes measured cable loss; not a traceable absolute RF power calibration "
             "or a measurement of fundamental power alone."
         )
@@ -201,7 +231,10 @@ class Calibration:
             "calibrated_power_range_dbm": [powers[0], powers[-1]],
             "frequency_bracket_hz": [left["frequency_hz"], right["frequency_hz"]],
             "load_ohms": 50,
-            "waveform": "SINE",
+            "waveform": self.document["waveform"],
+            "duty_percent": 50,
+            "power_metric": POWER_METRIC,
+            "scope_analog_bandwidth_hz": self.document.get("scope_analog_bandwidth_hz"),
             "offset_v": 0,
             "calibration_id": self.document["calibration_id"],
             "measurement_plane": self.document["measurement_plane"],
@@ -213,12 +246,15 @@ class PowerController:
         self.generator = generator
         self.calibration = calibration
 
-    def _calibration(self):
-        return self.calibration or Calibration.load()
+    def _calibration(self, waveform="SINE"):
+        waveform = calibrated_waveform(waveform)
+        calibration = self.calibration or Calibration.load(waveform)
+        calibration.require_waveform(waveform)
+        return calibration
 
-    def get_calibration(self, channel=None, include_points=False):
+    def get_calibration(self, channel=None, include_points=False, waveform="SINE"):
         """Read metadata/table without connecting to the generator."""
-        return self._calibration().summary(channel, include_points)
+        return self._calibration(waveform).summary(channel, include_points)
 
     def _plan(self, calibration, channel, frequency_hz, power_dbm):
         calibration.require_device(self.generator.info())
@@ -226,18 +262,18 @@ class PowerController:
         number("frequency_hz", frequency_hz, 0, self.generator._model_limit())
         return plan
 
-    def preview_power(self, channel, frequency_hz, power_dbm):
-        calibration = self._calibration()
+    def preview_power(self, channel, frequency_hz, power_dbm, waveform="SINE"):
+        calibration = self._calibration(waveform)
         with self.generator.io.session():
             return self._plan(calibration, channel, frequency_hz, power_dbm)
 
-    def set_power(self, channel, frequency_hz, power_dbm, enabled=None):
-        calibration = self._calibration()
+    def set_power(self, channel, frequency_hz, power_dbm, enabled=None, waveform="SINE"):
+        calibration = self._calibration(waveform)
         with self.generator.io.session():
             plan = self._plan(calibration, channel, frequency_hz, power_dbm)
             state = self.generator.configure(
                 channel,
-                waveform="SINE",
+                waveform=plan["waveform"],
                 frequency_hz=frequency_hz,
                 amplitude_vpp=plan["amplitude_vpp"],
                 offset_v=0,
