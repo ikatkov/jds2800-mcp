@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jds2800-mcp"
+version = "0.1.0"
+description = "JUNTEK JDS2800 USB serial control: MCP server and JSON scripting CLI"
+requires-python = ">=3.11"
+readme = "README.md"
+license = "MIT"
+dependencies = ["mcp==1.30.0", "pyserial==3.5"]
+
+[project.urls]
+Repository = "https://github.com/ikatkov/jds2800-mcp"
+Issues = "https://github.com/ikatkov/jds2800-mcp/issues"
+
+[project.scripts]
+jds2800 = "jds2800_mcp.cli:main"
+jds2800-mcp = "jds2800_mcp.server:main"
+jds2800-calibrate = "jds2800_mcp.calibrate:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<9", "ruff>=0.11"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = [".tools", "src/jds2800_mcp/vendor"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]

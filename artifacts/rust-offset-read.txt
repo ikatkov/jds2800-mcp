@@ -1,0 +1,39 @@
+Connection details removed from this public transcript.
+
+verbosity level: 1
+
+
+Device(s) selected: ["USB serial endpoint"]
+
+
+
+Opening communication link with device: USB serial endpoint
+
+
+Getting voltage offset: ch1:
+:r27=0.
+
+Response:
+:r27=1000.
+
+Getting voltage offset: ch2:
+:r28=0.
+
+
+error (Io 19): error: unexpected response from device: missing equals (=):
+\x01\x02\x03\x04\x05\x06\x07\x08
+
+
+
+error (Io 19): error: unexpected response from device: missing equals (=):
+\x01\x02\x03\x04\x05\x06\x07\x08
+
+
+
+exiting with error:
+error (Io 19): error: unexpected response from device: missing equals (=):
+\x01\x02\x03\x04\x05\x06\x07\x08
+
+
+exit code:
+19

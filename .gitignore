@@ -1,0 +1,13 @@
+.venv/
+.tools/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+dist/
+*.egg-info/
+
+.private/
+.DS_Store
+/artifacts/*.log
+/artifacts/*.jsonl

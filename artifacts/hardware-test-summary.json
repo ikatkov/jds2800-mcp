@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "tests": 8,
+  "report": "artifacts/hardware-verification.json"
+}

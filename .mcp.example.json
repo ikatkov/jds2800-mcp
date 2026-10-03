@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "jds2800": {
+      "command": "jds2800-mcp"
+    }
+  }
+}

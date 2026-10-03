@@ -1,0 +1,13 @@
+{
+  "server": "JDS2800",
+  "tools": 14,
+  "resource_uri": "jds2800://manual",
+  "mime_type": "text/markdown",
+  "reference": "src/jds2800_mcp/docs/JDS2800-reference.md",
+  "reference_sha256": "e5cfc4170e7debd5779740fd5ac6aaeb82b9a518a408a373b98deee1d82051c9",
+  "wheel": "dist/jds2800_mcp-0.1.0-py3-none-any.whl",
+  "wheel_reference_matches": true,
+  "wheel_resource_loader_works": true,
+  "cli_available_without_hardware": true,
+  "mcp_tool_and_resource_available_without_hardware": true
+}

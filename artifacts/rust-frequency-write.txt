@@ -1,0 +1,18 @@
+Connection details removed from this public transcript.
+
+verbosity level: 1
+
+
+Device(s) selected: ["USB serial endpoint"]
+
+
+
+Opening communication link with device: USB serial endpoint
+
+
+Setting frequency in Hz: ch1=150000:
+:w23=150000,0.
+
+Response:
+:ok
+\x05

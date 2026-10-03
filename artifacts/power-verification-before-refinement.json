@@ -1,0 +1,4494 @@
+{
+  "created_at": "2026-10-03T20:22:15.176567+00:00",
+  "passed": false,
+  "tests": [
+    {
+      "channel": 1,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.17549204615609426,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.071,
+        "predicted_power_dbm": -24.958539468356452,
+        "quantization_error_db": 0.04146053164354768,
+        "calibrated_power_range_dbm": [
+          -29.873714985930317,
+          12.079274061191954
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 0.071,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.012830973395213474,
+        "measured_dbm": -24.824507953843906,
+        "vpp_v": 0.038,
+        "dc_v": -0.002349832,
+        "frequency_measured_hz": 1492537.0,
+        "repeatability_db": 0.0018759927594267367,
+        "readings": [
+          {
+            "VRMS": 0.01304437,
+            "VAVG": -0.002349832,
+            "FREQuency": 1492537.0,
+            "VPP": 0.038,
+            "vrms_ac_v": 0.012830973395213474,
+            "measured_dbm": -24.824507953843906
+          },
+          {
+            "VRMS": 0.01304437,
+            "VAVG": -0.002349832,
+            "FREQuency": 1492537.0,
+            "VPP": 0.038,
+            "vrms_ac_v": 0.012830973395213474,
+            "measured_dbm": -24.824507953843906
+          },
+          {
+            "VRMS": 0.0130368,
+            "VAVG": -0.002291974,
+            "FREQuency": 1515152.0,
+            "VPP": 0.038,
+            "vrms_ac_v": 0.012833744949286003,
+            "measured_dbm": -24.82263196108448
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": -16,
+      "error_db": 0.000835023956952341,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.199,
+        "predicted_power_dbm": -16.01934916811736,
+        "quantization_error_db": -0.019349168117358317,
+        "calibrated_power_range_dbm": [
+          -29.873714985930317,
+          12.079274061191954
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 0.199,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.035442696298334866,
+        "measured_dbm": -15.999164976043048,
+        "vpp_v": 0.1016,
+        "dc_v": -0.00184682,
+        "frequency_measured_hz": 1515152.0,
+        "repeatability_db": 0.002704912030482731,
+        "readings": [
+          {
+            "VRMS": 0.03549869,
+            "VAVG": -0.001785956,
+            "FREQuency": 1515152.0,
+            "VPP": 0.1016,
+            "vrms_ac_v": 0.035453735386869516,
+            "measured_dbm": -15.996460064012565
+          },
+          {
+            "VRMS": 0.03549078,
+            "VAVG": -0.00184682,
+            "FREQuency": 1515152.0,
+            "VPP": 0.1016,
+            "vrms_ac_v": 0.035442696298334866,
+            "measured_dbm": -15.999164976043048
+          },
+          {
+            "VRMS": 0.03549078,
+            "VAVG": -0.00184682,
+            "FREQuency": 1515152.0,
+            "VPP": 0.1016,
+            "vrms_ac_v": 0.035442696298334866,
+            "measured_dbm": -15.999164976043048
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.1493335150781503,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.561,
+        "predicted_power_dbm": -6.999324736149448,
+        "quantization_error_db": 0.0006752638505522768,
+        "calibrated_power_range_dbm": [
+          -29.873714985930317,
+          12.079274061191954
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 0.561,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.0981789371819371,
+        "measured_dbm": -7.14933351507815,
+        "vpp_v": 0.284,
+        "dc_v": -0.005976593,
+        "frequency_measured_hz": 1515152.0,
+        "repeatability_db": 0.032714566848715876,
+        "readings": [
+          {
+            "VRMS": 0.09802239,
+            "VAVG": -0.006451508,
+            "FREQuency": 1515152.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09780985116969576,
+            "measured_dbm": -7.182048081926866
+          },
+          {
+            "VRMS": 0.09836068,
+            "VAVG": -0.005976593,
+            "FREQuency": 1515152.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.0981789371819371,
+            "measured_dbm": -7.14933351507815
+          },
+          {
+            "VRMS": 0.09836068,
+            "VAVG": -0.005976593,
+            "FREQuency": 1515152.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.0981789371819371,
+            "measured_dbm": -7.14933351507815
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": 0,
+      "error_db": 0.014253273358986115,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.26,
+        "predicted_power_dbm": -0.0026051828654858333,
+        "quantization_error_db": -0.0026051828654858333,
+        "calibrated_power_range_dbm": [
+          -29.873714985930317,
+          12.079274061191954
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 1.26,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.22397403074124467,
+        "measured_dbm": 0.014253273358986115,
+        "vpp_v": 0.648,
+        "dc_v": -0.0155719,
+        "frequency_measured_hz": 1515152.0,
+        "repeatability_db": 0.007033919991003421,
+        "readings": [
+          {
+            "VRMS": 0.2245147,
+            "VAVG": -0.0155719,
+            "FREQuency": 1515152.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22397403074124467,
+            "measured_dbm": 0.014253273358986115
+          },
+          {
+            "VRMS": 0.2245147,
+            "VAVG": -0.0155719,
+            "FREQuency": 1515152.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22397403074124467,
+            "measured_dbm": 0.014253273358986115
+          },
+          {
+            "VRMS": 0.2246874,
+            "VAVG": -0.01545148,
+            "FREQuency": 1515152.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22415548060346327,
+            "measured_dbm": 0.021287193349989537
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": 7,
+      "error_db": 0.16710458059659405,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": 7.0,
+        "amplitude_vpp": 2.795,
+        "predicted_power_dbm": 6.99984499681916,
+        "quantization_error_db": -0.00015500318083994102,
+        "calibrated_power_range_dbm": [
+          -29.873714985930317,
+          12.079274061191954
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 2.795,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.5103172292924412,
+        "measured_dbm": 7.167104580596594,
+        "vpp_v": 1.5,
+        "dc_v": -0.02085281,
+        "frequency_measured_hz": 1515152.0,
+        "repeatability_db": 0.0025752926678075383,
+        "readings": [
+          {
+            "VRMS": 0.5107909,
+            "VAVG": -0.01814377,
+            "FREQuency": 1515152.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5104685564586688,
+            "measured_dbm": 7.169679873264402
+          },
+          {
+            "VRMS": 0.5107431,
+            "VAVG": -0.02085281,
+            "FREQuency": 1515152.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5103172292924412,
+            "measured_dbm": 7.167104580596594
+          },
+          {
+            "VRMS": 0.5107431,
+            "VAVG": -0.02085281,
+            "FREQuency": 1515152.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5103172292924412,
+            "measured_dbm": 7.167104580596594
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": 10,
+      "error_db": 0.09347346889687103,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": 10.0,
+        "amplitude_vpp": 3.941,
+        "predicted_power_dbm": 10.000681572081195,
+        "quantization_error_db": 0.0006815720811950143,
+        "calibrated_power_range_dbm": [
+          -29.873714985930317,
+          12.079274061191954
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 3.941,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.7147574250783951,
+        "measured_dbm": 10.093473468896871,
+        "vpp_v": 2.06,
+        "dc_v": -0.02183945,
+        "frequency_measured_hz": 1515152.0,
+        "repeatability_db": 0.0007272165044778234,
+        "readings": [
+          {
+            "VRMS": 0.7151432,
+            "VAVG": -0.02158859,
+            "FREQuency": 1470588.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7148172698585645,
+            "measured_dbm": 10.094200685401349
+          },
+          {
+            "VRMS": 0.715091,
+            "VAVG": -0.02183945,
+            "FREQuency": 1515152.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7147574250783951,
+            "measured_dbm": 10.093473468896871
+          },
+          {
+            "VRMS": 0.715091,
+            "VAVG": -0.02183945,
+            "FREQuency": 1515152.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7147574250783951,
+            "measured_dbm": 10.093473468896871
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.14207683111959213,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.072,
+        "predicted_power_dbm": -24.96229506290116,
+        "quantization_error_db": 0.03770493709884093,
+        "calibrated_power_range_dbm": [
+          -29.993094672670445,
+          11.982896090443976
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 0.072,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.012781706584943342,
+        "measured_dbm": -24.857923168880408,
+        "vpp_v": 0.0376,
+        "dc_v": -0.002276254,
+        "frequency_measured_hz": 5494506.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.01298281,
+            "VAVG": -0.002276254,
+            "FREQuency": 5494506.0,
+            "VPP": 0.0376,
+            "vrms_ac_v": 0.012781706584943342,
+            "measured_dbm": -24.857923168880408
+          },
+          {
+            "VRMS": 0.01298281,
+            "VAVG": -0.002276254,
+            "FREQuency": 5494506.0,
+            "VPP": 0.0376,
+            "vrms_ac_v": 0.012781706584943342,
+            "measured_dbm": -24.857923168880408
+          },
+          {
+            "VRMS": 0.01298281,
+            "VAVG": -0.002276254,
+            "FREQuency": 5494506.0,
+            "VPP": 0.0376,
+            "vrms_ac_v": 0.012781706584943342,
+            "measured_dbm": -24.857923168880408
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": -16,
+      "error_db": -0.002607028089368413,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.201,
+        "predicted_power_dbm": -16.009488907448404,
+        "quantization_error_db": -0.009488907448403694,
+        "calibrated_power_range_dbm": [
+          -29.993094672670445,
+          11.982896090443976
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 0.201,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.03542865381779082,
+        "measured_dbm": -16.00260702808937,
+        "vpp_v": 0.104,
+        "dc_v": -0.001521744,
+        "frequency_measured_hz": 5555556.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.03546132,
+            "VAVG": -0.001521744,
+            "FREQuency": 5555556.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.03542865381779082,
+            "measured_dbm": -16.00260702808937
+          },
+          {
+            "VRMS": 0.03546132,
+            "VAVG": -0.001521744,
+            "FREQuency": 5555556.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.03542865381779082,
+            "measured_dbm": -16.00260702808937
+          },
+          {
+            "VRMS": 0.03546132,
+            "VAVG": -0.001521744,
+            "FREQuency": 5555556.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.03542865381779082,
+            "measured_dbm": -16.00260702808937
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.12719399061699832,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.567,
+        "predicted_power_dbm": -6.994848669800579,
+        "quantization_error_db": 0.005151330199421267,
+        "calibrated_power_range_dbm": [
+          -29.993094672670445,
+          11.982896090443976
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 0.567,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.0984295053590395,
+        "measured_dbm": -7.127193990616998,
+        "vpp_v": 0.284,
+        "dc_v": -0.004943146,
+        "frequency_measured_hz": 5494506.0,
+        "repeatability_db": 0.02693460019388816,
+        "readings": [
+          {
+            "VRMS": 0.09855355,
+            "VAVG": -0.004943146,
+            "FREQuency": 5494506.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.0984295053590395,
+            "measured_dbm": -7.127193990616998
+          },
+          {
+            "VRMS": 0.09855355,
+            "VAVG": -0.004943146,
+            "FREQuency": 5494506.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.0984295053590395,
+            "measured_dbm": -7.127193990616998
+          },
+          {
+            "VRMS": 0.09824501,
+            "VAVG": -0.004859528,
+            "FREQuency": 5494506.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09812475211442481,
+            "measured_dbm": -7.1541285908108865
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": 0,
+      "error_db": 0.02046371077335095,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.276,
+        "predicted_power_dbm": 0.000895589577104075,
+        "quantization_error_db": 0.000895589577104075,
+        "calibrated_power_range_dbm": [
+          -29.993094672670445,
+          11.982896090443976
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 1.276,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.22413423011668698,
+        "measured_dbm": 0.02046371077335095,
+        "vpp_v": 0.648,
+        "dc_v": -0.0148963,
+        "frequency_measured_hz": 5494506.0,
+        "repeatability_db": 0.005507264307192273,
+        "readings": [
+          {
+            "VRMS": 0.2247521,
+            "VAVG": -0.01461536,
+            "FREQuency": 5494506.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22427638686781184,
+            "measured_dbm": 0.02597097508054322
+          },
+          {
+            "VRMS": 0.2246287,
+            "VAVG": -0.0148963,
+            "FREQuency": 5494506.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22413423011668698,
+            "measured_dbm": 0.02046371077335095
+          },
+          {
+            "VRMS": 0.2246287,
+            "VAVG": -0.0148963,
+            "FREQuency": 5494506.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22413423011668698,
+            "measured_dbm": 0.02046371077335095
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": 7,
+      "error_db": 0.18532613046373747,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": 7.0,
+        "amplitude_vpp": 2.826,
+        "predicted_power_dbm": 7.000088822801789,
+        "quantization_error_db": 8.882280178923452e-05,
+        "calibrated_power_range_dbm": [
+          -29.993094672670445,
+          11.982896090443976
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 2.826,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.5113889135631209,
+        "measured_dbm": 7.1853261304637375,
+        "vpp_v": 1.5,
+        "dc_v": -0.01511703,
+        "frequency_measured_hz": 5494506.0,
+        "repeatability_db": 0.026094288999631843,
+        "readings": [
+          {
+            "VRMS": 0.5116123,
+            "VAVG": -0.01511703,
+            "FREQuency": 5494506.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5113889135631209,
+            "measured_dbm": 7.1853261304637375
+          },
+          {
+            "VRMS": 0.5116123,
+            "VAVG": -0.01511703,
+            "FREQuency": 5494506.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5113889135631209,
+            "measured_dbm": 7.1853261304637375
+          },
+          {
+            "VRMS": 0.5100905,
+            "VAVG": -0.01550171,
+            "FREQuency": 5494506.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5098548961982476,
+            "measured_dbm": 7.159231841464106
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": 10,
+      "error_db": 0.06488568577934828,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": 10.0,
+        "amplitude_vpp": 3.984,
+        "predicted_power_dbm": 9.999193227089771,
+        "quantization_error_db": -0.0008067729102290144,
+        "calibrated_power_range_dbm": [
+          -29.993094672670445,
+          11.982896090443976
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 3.984,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.7124088180903885,
+        "measured_dbm": 10.064885685779348,
+        "vpp_v": 2.06,
+        "dc_v": -0.02065216,
+        "frequency_measured_hz": 5494506.0,
+        "repeatability_db": 0.0016378743400871087,
+        "readings": [
+          {
+            "VRMS": 0.712946,
+            "VAVG": -0.02396316,
+            "FREQuency": 5494506.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7125431677300782,
+            "measured_dbm": 10.066523560119435
+          },
+          {
+            "VRMS": 0.7127081,
+            "VAVG": -0.02065216,
+            "FREQuency": 5494506.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7124088180903885,
+            "measured_dbm": 10.064885685779348
+          },
+          {
+            "VRMS": 0.7127081,
+            "VAVG": -0.02065216,
+            "FREQuency": 5494506.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7124088180903885,
+            "measured_dbm": 10.064885685779348
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.10746099354836858,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.073,
+        "predicted_power_dbm": -25.023605376415027,
+        "quantization_error_db": -0.023605376415027024,
+        "calibrated_power_range_dbm": [
+          -30.175743230658362,
+          11.789361848271328
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 0.073,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.01273086907474097,
+        "measured_dbm": -24.89253900645163,
+        "vpp_v": 0.0372,
+        "dc_v": -0.002483948,
+        "frequency_measured_hz": 9433962.0,
+        "repeatability_db": 0.012975794079416403,
+        "readings": [
+          {
+            "VRMS": 0.01297093,
+            "VAVG": -0.002483948,
+            "FREQuency": 9433962.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.01273086907474097,
+            "measured_dbm": -24.89253900645163
+          },
+          {
+            "VRMS": 0.01297093,
+            "VAVG": -0.002483948,
+            "FREQuency": 9433962.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.01273086907474097,
+            "measured_dbm": -24.89253900645163
+          },
+          {
+            "VRMS": 0.01296758,
+            "VAVG": -0.002562543,
+            "FREQuency": 9615384.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012711864710952165,
+            "measured_dbm": -24.905514800531048
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": -16,
+      "error_db": 0.03849911240357784,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.204,
+        "predicted_power_dbm": -16.01990189490576,
+        "quantization_error_db": -0.019901894905760997,
+        "calibrated_power_range_dbm": [
+          -30.175743230658362,
+          11.789361848271328
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 0.204,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.0355967179761042,
+        "measured_dbm": -15.961500887596422,
+        "vpp_v": 0.104,
+        "dc_v": -0.00170401,
+        "frequency_measured_hz": 9433962.0,
+        "repeatability_db": 0.012899876793790455,
+        "readings": [
+          {
+            "VRMS": 0.03558949,
+            "VAVG": -0.00180101,
+            "FREQuency": 9433962.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.03554389063453803,
+            "measured_dbm": -15.974400764390213
+          },
+          {
+            "VRMS": 0.03563748,
+            "VAVG": -0.00170401,
+            "FREQuency": 9433962.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.0355967179761042,
+            "measured_dbm": -15.961500887596422
+          },
+          {
+            "VRMS": 0.03563748,
+            "VAVG": -0.00170401,
+            "FREQuency": 9433962.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.0355967179761042,
+            "measured_dbm": -15.961500887596422
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.1781333058156802,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.578,
+        "predicted_power_dbm": -6.993706438270061,
+        "quantization_error_db": 0.006293561729939334,
+        "calibrated_power_range_dbm": [
+          -30.175743230658362,
+          11.789361848271328
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 0.578,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.09785394451949293,
+        "measured_dbm": -7.17813330581568,
+        "vpp_v": 0.284,
+        "dc_v": -0.00813379,
+        "frequency_measured_hz": 9433962.0,
+        "repeatability_db": 0.04685094602439577,
+        "readings": [
+          {
+            "VRMS": 0.09819141,
+            "VAVG": -0.00813379,
+            "FREQuency": 9433962.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09785394451949293,
+            "measured_dbm": -7.17813330581568
+          },
+          {
+            "VRMS": 0.09819141,
+            "VAVG": -0.00813379,
+            "FREQuency": 9433962.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09785394451949293,
+            "measured_dbm": -7.17813330581568
+          },
+          {
+            "VRMS": 0.09863931,
+            "VAVG": -0.007103669,
+            "FREQuency": 9615384.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09838318638880597,
+            "measured_dbm": -7.131282359791284
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": 0,
+      "error_db": 0.03732977588240468,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.301,
+        "predicted_power_dbm": -0.0028809353272189475,
+        "quantization_error_db": -0.0028809353272189475,
+        "calibrated_power_range_dbm": [
+          -30.175743230658362,
+          11.789361848271328
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 1.301,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.22456987174547613,
+        "measured_dbm": 0.03732977588240468,
+        "vpp_v": 0.648,
+        "dc_v": -0.01934448,
+        "frequency_measured_hz": 9615384.0,
+        "repeatability_db": 0.0027048324249891245,
+        "readings": [
+          {
+            "VRMS": 0.2254015,
+            "VAVG": -0.01934448,
+            "FREQuency": 9615384.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22456987174547613,
+            "measured_dbm": 0.03732977588240468
+          },
+          {
+            "VRMS": 0.2254015,
+            "VAVG": -0.01934448,
+            "FREQuency": 9615384.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22456987174547613,
+            "measured_dbm": 0.03732977588240468
+          },
+          {
+            "VRMS": 0.2254943,
+            "VAVG": -0.01961206,
+            "FREQuency": 9615384.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22463981489274423,
+            "measured_dbm": 0.040034608307393804
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": 7,
+      "error_db": 0.1629444053185587,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": 7.0,
+        "amplitude_vpp": 2.886,
+        "predicted_power_dbm": 6.999519475727599,
+        "quantization_error_db": -0.00048052427240108386,
+        "calibrated_power_range_dbm": [
+          -30.175743230658362,
+          11.789361848271328
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 2.886,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.5100728673589043,
+        "measured_dbm": 7.162944405318559,
+        "vpp_v": 1.48,
+        "dc_v": -0.01779266,
+        "frequency_measured_hz": 9433962.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.5103831,
+            "VAVG": -0.01779266,
+            "FREQuency": 9433962.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.5100728673589043,
+            "measured_dbm": 7.162944405318559
+          },
+          {
+            "VRMS": 0.5103831,
+            "VAVG": -0.01779266,
+            "FREQuency": 9433962.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.5100728673589043,
+            "measured_dbm": 7.162944405318559
+          },
+          {
+            "VRMS": 0.5103831,
+            "VAVG": -0.01779266,
+            "FREQuency": 9433962.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.5100728673589043,
+            "measured_dbm": 7.162944405318559
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": 10,
+      "error_db": 0.08505473307165623,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": 10.0,
+        "amplitude_vpp": 4.072,
+        "predicted_power_dbm": 10.000002185313924,
+        "quantization_error_db": 2.185313924485399e-06,
+        "calibrated_power_range_dbm": [
+          -30.175743230658362,
+          11.789361848271328
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 4.072,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.7140649872286237,
+        "measured_dbm": 10.085054733071656,
+        "vpp_v": 2.06,
+        "dc_v": -0.03720734,
+        "frequency_measured_hz": 9615384.0,
+        "repeatability_db": 0.008507552956729114,
+        "readings": [
+          {
+            "VRMS": 0.7150337,
+            "VAVG": -0.03720734,
+            "FREQuency": 9615384.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7140649872286237,
+            "measured_dbm": 10.085054733071656
+          },
+          {
+            "VRMS": 0.7150337,
+            "VAVG": -0.03720734,
+            "FREQuency": 9615384.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7140649872286237,
+            "measured_dbm": 10.085054733071656
+          },
+          {
+            "VRMS": 0.7156684,
+            "VAVG": -0.03595322,
+            "FREQuency": 9433962.0,
+            "VPP": 2.08,
+            "vrms_ac_v": 0.7147647338321831,
+            "measured_dbm": 10.093562286028385
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.14777676944675022,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.074,
+        "predicted_power_dbm": -24.9888880555413,
+        "quantization_error_db": 0.011111944458701117,
+        "calibrated_power_range_dbm": [
+          -30.25524266282756,
+          11.711034702100747
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 0.074,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.012790097072539012,
+        "measured_dbm": -24.85222323055325,
+        "vpp_v": 0.0372,
+        "dc_v": -0.002676923,
+        "frequency_measured_hz": 10416670.0,
+        "repeatability_db": 0.01742694594258154,
+        "readings": [
+          {
+            "VRMS": 0.01306723,
+            "VAVG": -0.002676923,
+            "FREQuency": 10416670.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012790097072539012,
+            "measured_dbm": -24.85222323055325
+          },
+          {
+            "VRMS": 0.01306723,
+            "VAVG": -0.002676923,
+            "FREQuency": 10416670.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012790097072539012,
+            "measured_dbm": -24.85222323055325
+          },
+          {
+            "VRMS": 0.01305183,
+            "VAVG": -0.002723746,
+            "FREQuency": 10638300.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012764461370398049,
+            "measured_dbm": -24.86965017649583
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": -16,
+      "error_db": 0.037908506705790046,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.206,
+        "predicted_power_dbm": -16.00435460332357,
+        "quantization_error_db": -0.004354603323569961,
+        "calibrated_power_range_dbm": [
+          -30.25524266282756,
+          11.711034702100747
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 0.206,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.03559429762417822,
+        "measured_dbm": -15.96209149329421,
+        "vpp_v": 0.104,
+        "dc_v": -0.001749161,
+        "frequency_measured_hz": 10416670.0,
+        "repeatability_db": 0.007109050846739962,
+        "readings": [
+          {
+            "VRMS": 0.03563725,
+            "VAVG": -0.001749161,
+            "FREQuency": 10416670.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.03559429762417822,
+            "measured_dbm": -15.96209149329421
+          },
+          {
+            "VRMS": 0.03563725,
+            "VAVG": -0.001749161,
+            "FREQuency": 10416670.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.03559429762417822,
+            "measured_dbm": -15.96209149329421
+          },
+          {
+            "VRMS": 0.03561237,
+            "VAVG": -0.001832779,
+            "FREQuency": 10416670.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.03556517704376092,
+            "measured_dbm": -15.96920054414095
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.16978982001012533,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.582,
+        "predicted_power_dbm": -7.002375277062639,
+        "quantization_error_db": -0.0023752770626392916,
+        "calibrated_power_range_dbm": [
+          -30.25524266282756,
+          11.711034702100747
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 0.582,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.09794798615320717,
+        "measured_dbm": -7.169789820010125,
+        "vpp_v": 0.284,
+        "dc_v": -0.009719056,
+        "frequency_measured_hz": 10638300.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.098429,
+            "VAVG": -0.009719056,
+            "FREQuency": 10638300.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09794798615320717,
+            "measured_dbm": -7.169789820010125
+          },
+          {
+            "VRMS": 0.098429,
+            "VAVG": -0.009719056,
+            "FREQuency": 10638300.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09794798615320717,
+            "measured_dbm": -7.169789820010125
+          },
+          {
+            "VRMS": 0.098429,
+            "VAVG": -0.009719056,
+            "FREQuency": 10638300.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09794798615320717,
+            "measured_dbm": -7.169789820010125
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": 0,
+      "error_db": 0.0759666509506393,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.312,
+        "predicted_power_dbm": 0.002475771427633444,
+        "quantization_error_db": 0.002475771427633444,
+        "calibrated_power_range_dbm": [
+          -30.25524266282756,
+          11.711034702100747
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 1.312,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.2255710362820759,
+        "measured_dbm": 0.0759666509506393,
+        "vpp_v": 0.648,
+        "dc_v": -0.02240802,
+        "frequency_measured_hz": 10416670.0,
+        "repeatability_db": 0.0028104902297624162,
+        "readings": [
+          {
+            "VRMS": 0.2266813,
+            "VAVG": -0.02240802,
+            "FREQuency": 10416670.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.2255710362820759,
+            "measured_dbm": 0.0759666509506393
+          },
+          {
+            "VRMS": 0.2266813,
+            "VAVG": -0.02240802,
+            "FREQuency": 10416670.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.2255710362820759,
+            "measured_dbm": 0.0759666509506393
+          },
+          {
+            "VRMS": 0.2267004,
+            "VAVG": -0.02185956,
+            "FREQuency": 10416670.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22564403603190225,
+            "measured_dbm": 0.07877714118040172
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": 7,
+      "error_db": 0.25353837026234416,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": 7.0,
+        "amplitude_vpp": 2.913,
+        "predicted_power_dbm": 6.9995167702380146,
+        "quantization_error_db": -0.00048322976198544865,
+        "calibrated_power_range_dbm": [
+          -30.25524266282756,
+          11.711034702100747
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 2.913,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.5154207762588167,
+        "measured_dbm": 7.253538370262344,
+        "vpp_v": 1.48,
+        "dc_v": -0.02538467,
+        "frequency_measured_hz": 10416670.0,
+        "repeatability_db": 0.044601617257223225,
+        "readings": [
+          {
+            "VRMS": 0.5160455,
+            "VAVG": -0.02538467,
+            "FREQuency": 10416670.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.5154207762588167,
+            "measured_dbm": 7.253538370262344
+          },
+          {
+            "VRMS": 0.5160455,
+            "VAVG": -0.02538467,
+            "FREQuency": 10416670.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.5154207762588167,
+            "measured_dbm": 7.253538370262344
+          },
+          {
+            "VRMS": 0.5128143,
+            "VAVG": -0.005852813,
+            "FREQuency": 10416670.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.5127808994731347,
+            "measured_dbm": 7.208936753005121
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": 10,
+      "error_db": 0.1157803703172533,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": 10.0,
+        "amplitude_vpp": 4.109,
+        "predicted_power_dbm": 9.99948163420481,
+        "quantization_error_db": -0.0005183657951892684,
+        "calibrated_power_range_dbm": [
+          -30.25524266282756,
+          11.711034702100747
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 4.109,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.7165954077330621,
+        "measured_dbm": 10.115780370317253,
+        "vpp_v": 2.06,
+        "dc_v": -0.04113708,
+        "frequency_measured_hz": 10638300.0,
+        "repeatability_db": 0.020469928170660623,
+        "readings": [
+          {
+            "VRMS": 0.7177752,
+            "VAVG": -0.04113708,
+            "FREQuency": 10638300.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7165954077330621,
+            "measured_dbm": 10.115780370317253
+          },
+          {
+            "VRMS": 0.7177752,
+            "VAVG": -0.04113708,
+            "FREQuency": 10638300.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7165954077330621,
+            "measured_dbm": 10.115780370317253
+          },
+          {
+            "VRMS": 0.7161832,
+            "VAVG": -0.04270905,
+            "FREQuency": 10416670.0,
+            "VPP": 2.04,
+            "vrms_ac_v": 0.7149086046554045,
+            "measured_dbm": 10.095310442146593
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 14500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.04882180330617558,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 14500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.076,
+        "predicted_power_dbm": -24.9876755131392,
+        "quantization_error_db": 0.012324486860798345,
+        "calibrated_power_range_dbm": [
+          -30.47779299242922,
+          11.493626371113272
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 14500000.0,
+          "amplitude_vpp": 0.076,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.012645211346072117,
+        "measured_dbm": -24.951178196693824,
+        "vpp_v": 0.0368,
+        "dc_v": -0.002379263,
+        "frequency_measured_hz": 14705880.0,
+        "repeatability_db": 0.0009015579779934058,
+        "readings": [
+          {
+            "VRMS": 0.01286236,
+            "VAVG": -0.002360535,
+            "FREQuency": 14705880.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.012643898895648249,
+            "measured_dbm": -24.952079754671818
+          },
+          {
+            "VRMS": 0.0128671,
+            "VAVG": -0.002379263,
+            "FREQuency": 14705880.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.012645211346072117,
+            "measured_dbm": -24.951178196693824
+          },
+          {
+            "VRMS": 0.0128671,
+            "VAVG": -0.002379263,
+            "FREQuency": 14705880.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.012645211346072117,
+            "measured_dbm": -24.951178196693824
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 14500000.0,
+      "requested_dbm": -16,
+      "error_db": -0.06588515046508192,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 14500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.21,
+        "predicted_power_dbm": -16.01554245234652,
+        "quantization_error_db": -0.015542452346519298,
+        "calibrated_power_range_dbm": [
+          -30.47779299242922,
+          11.493626371113272
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 14500000.0,
+          "amplitude_vpp": 0.21,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.035171488181751476,
+        "measured_dbm": -16.065885150465082,
+        "vpp_v": 0.102,
+        "dc_v": -0.002056854,
+        "frequency_measured_hz": 14285720.0,
+        "repeatability_db": 0.010526116740663838,
+        "readings": [
+          {
+            "VRMS": 0.03528536,
+            "VAVG": -0.002240799,
+            "FREQuency": 14705880.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.03521413707832693,
+            "measured_dbm": -16.055359033724418
+          },
+          {
+            "VRMS": 0.03523158,
+            "VAVG": -0.002056854,
+            "FREQuency": 14285720.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.035171488181751476,
+            "measured_dbm": -16.065885150465082
+          },
+          {
+            "VRMS": 0.03523158,
+            "VAVG": -0.002056854,
+            "FREQuency": 14285720.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.035171488181751476,
+            "measured_dbm": -16.065885150465082
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 14500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.20742068268281333,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 14500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.598,
+        "predicted_power_dbm": -6.993259365101727,
+        "quantization_error_db": 0.006740634898273257,
+        "calibrated_power_range_dbm": [
+          -30.47779299242922,
+          11.493626371113272
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 14500000.0,
+          "amplitude_vpp": 0.598,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.09752455291407582,
+        "measured_dbm": -7.207420682682813,
+        "vpp_v": 0.284,
+        "dc_v": -0.006474915,
+        "frequency_measured_hz": 14285720.0,
+        "repeatability_db": 0.02590340299972471,
+        "readings": [
+          {
+            "VRMS": 0.09752181,
+            "VAVG": -0.007484955,
+            "FREQuency": 14285720.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09723414459090014,
+            "measured_dbm": -7.233324085682538
+          },
+          {
+            "VRMS": 0.09773926,
+            "VAVG": -0.006474915,
+            "FREQuency": 14285720.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09752455291407582,
+            "measured_dbm": -7.207420682682813
+          },
+          {
+            "VRMS": 0.09773926,
+            "VAVG": -0.006474915,
+            "FREQuency": 14285720.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09752455291407582,
+            "measured_dbm": -7.207420682682813
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 14500000.0,
+      "requested_dbm": 0,
+      "error_db": 0.03082528090505366,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 14500000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.346,
+        "predicted_power_dbm": -0.0028830047250224533,
+        "quantization_error_db": -0.0028830047250224533,
+        "calibrated_power_range_dbm": [
+          -30.47779299242922,
+          11.493626371113272
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 14500000.0,
+          "amplitude_vpp": 1.346,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.22440176382943158,
+        "measured_dbm": 0.03082528090505366,
+        "vpp_v": 0.648,
+        "dc_v": -0.0169632,
+        "frequency_measured_hz": 14705880.0,
+        "repeatability_db": 0.009284876286620593,
+        "readings": [
+          {
+            "VRMS": 0.2252673,
+            "VAVG": -0.01677594,
+            "FREQuency": 14705880.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22464176879290815,
+            "measured_dbm": 0.04011015719167425
+          },
+          {
+            "VRMS": 0.225042,
+            "VAVG": -0.0169632,
+            "FREQuency": 14705880.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22440176382943158,
+            "measured_dbm": 0.03082528090505366
+          },
+          {
+            "VRMS": 0.225042,
+            "VAVG": -0.0169632,
+            "FREQuency": 14705880.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22440176382943158,
+            "measured_dbm": 0.03082528090505366
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 14500000.0,
+      "requested_dbm": 7,
+      "error_db": 0.2142296306668836,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 14500000.0,
+        "requested_power_dbm": 7.0,
+        "amplitude_vpp": 2.986,
+        "predicted_power_dbm": 6.999022320762984,
+        "quantization_error_db": -0.0009776792370157494,
+        "calibrated_power_range_dbm": [
+          -30.47779299242922,
+          11.493626371113272
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 14500000.0,
+          "amplitude_vpp": 2.986,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.51309346546051,
+        "measured_dbm": 7.214229630666884,
+        "vpp_v": 1.48,
+        "dc_v": -0.01705688,
+        "frequency_measured_hz": 14705880.0,
+        "repeatability_db": 0.041637202126759476,
+        "readings": [
+          {
+            "VRMS": 0.5133769,
+            "VAVG": -0.01705688,
+            "FREQuency": 14705880.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.51309346546051,
+            "measured_dbm": 7.214229630666884
+          },
+          {
+            "VRMS": 0.5133769,
+            "VAVG": -0.01705688,
+            "FREQuency": 14705880.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.51309346546051,
+            "measured_dbm": 7.214229630666884
+          },
+          {
+            "VRMS": 0.5113108,
+            "VAVG": -0.02618729,
+            "FREQuency": 14285720.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.5106397556390374,
+            "measured_dbm": 7.172592428540124
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 14500000.0,
+      "requested_dbm": 10,
+      "error_db": 0.004078822544482108,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 14500000.0,
+        "requested_power_dbm": 10.0,
+        "amplitude_vpp": 4.213,
+        "predicted_power_dbm": 10.000407635636861,
+        "quantization_error_db": 0.00040763563686141424,
+        "calibrated_power_range_dbm": [
+          -30.47779299242922,
+          11.493626371113272
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 14500000.0,
+          "amplitude_vpp": 4.213,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.7074389107088357,
+        "measured_dbm": 10.004078822544482,
+        "vpp_v": 2.04,
+        "dc_v": -0.02371231,
+        "frequency_measured_hz": 14705880.0,
+        "repeatability_db": 0.00472846446306896,
+        "readings": [
+          {
+            "VRMS": 0.7076292,
+            "VAVG": -0.02852844,
+            "FREQuency": 14285720.0,
+            "VPP": 2.04,
+            "vrms_ac_v": 0.707053896675357,
+            "measured_dbm": 9.999350358081413
+          },
+          {
+            "VRMS": 0.7078362,
+            "VAVG": -0.02371231,
+            "FREQuency": 14705880.0,
+            "VPP": 2.04,
+            "vrms_ac_v": 0.7074389107088357,
+            "measured_dbm": 10.004078822544482
+          },
+          {
+            "VRMS": 0.7078362,
+            "VAVG": -0.02371231,
+            "FREQuency": 14705880.0,
+            "VPP": 2.04,
+            "vrms_ac_v": 0.7074389107088357,
+            "measured_dbm": 10.004078822544482
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 1000000.0,
+      "requested_dbm": 0,
+      "error_db": 0.020319351991574017,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 1000000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.257,
+        "predicted_power_dbm": -0.0022012755720810517,
+        "quantization_error_db": -0.0022012755720810517,
+        "calibrated_power_range_dbm": [
+          -29.859488741101888,
+          12.089935565171617
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1000000.0,
+          "amplitude_vpp": 1.257,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.22413050505490414,
+        "measured_dbm": 0.020319351991574017,
+        "vpp_v": 0.648,
+        "dc_v": -0.01347156,
+        "frequency_measured_hz": 1000000.0,
+        "repeatability_db": 0.0073128379937867916,
+        "readings": [
+          {
+            "VRMS": 0.224535,
+            "VAVG": -0.01347156,
+            "FREQuency": 1000000.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22413050505490414,
+            "measured_dbm": 0.020319351991574017
+          },
+          {
+            "VRMS": 0.224535,
+            "VAVG": -0.01347156,
+            "FREQuency": 1000000.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22413050505490414,
+            "measured_dbm": 0.020319351991574017
+          },
+          {
+            "VRMS": 0.2247315,
+            "VAVG": -0.01360535,
+            "FREQuency": 1000000.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22431928482327929,
+            "measured_dbm": 0.02763218998536081
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 10000000.0,
+      "requested_dbm": 0,
+      "error_db": 0.003931534441724743,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 10000000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.304,
+        "predicted_power_dbm": -0.00265842170076408,
+        "quantization_error_db": -0.00265842170076408,
+        "calibrated_power_range_dbm": [
+          -30.196985961889755,
+          11.770493419414747
+        ],
+        "frequency_bracket_hz": [
+          10000000.0,
+          10010000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10000000.0,
+          "amplitude_vpp": 1.304,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.22370803283964813,
+        "measured_dbm": 0.003931534441724743,
+        "vpp_v": 0.64,
+        "dc_v": -0.01748493,
+        "frequency_measured_hz": 10204080.0,
+        "repeatability_db": 0.03632755549830224,
+        "readings": [
+          {
+            "VRMS": 0.2243903,
+            "VAVG": -0.01748493,
+            "FREQuency": 10204080.0,
+            "VPP": 0.64,
+            "vrms_ac_v": 0.22370803283964813,
+            "measured_dbm": 0.003931534441724743
+          },
+          {
+            "VRMS": 0.2243903,
+            "VAVG": -0.01748493,
+            "FREQuency": 10204080.0,
+            "VPP": 0.64,
+            "vrms_ac_v": 0.22370803283964813,
+            "measured_dbm": 0.003931534441724743
+          },
+          {
+            "VRMS": 0.2252892,
+            "VAVG": -0.01701672,
+            "FREQuency": 10204080.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.2246456206496837,
+            "measured_dbm": 0.04025908994002698
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 10005000.0,
+      "requested_dbm": 0,
+      "error_db": 0.029267985538034322,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 10005000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.304,
+        "predicted_power_dbm": 0.001293238302278621,
+        "quantization_error_db": 0.001293238302278621,
+        "calibrated_power_range_dbm": [
+          -30.196598676446744,
+          11.76840434702898
+        ],
+        "frequency_bracket_hz": [
+          10000000.0,
+          10010000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10005000.0,
+          "amplitude_vpp": 1.304,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.22436153438648168,
+        "measured_dbm": 0.029267985538034322,
+        "vpp_v": 0.648,
+        "dc_v": -0.01736456,
+        "frequency_measured_hz": 10000000.0,
+        "repeatability_db": 0.014964165826976218,
+        "readings": [
+          {
+            "VRMS": 0.2246641,
+            "VAVG": -0.01757861,
+            "FREQuency": 10204080.0,
+            "VPP": 0.64,
+            "vrms_ac_v": 0.22397533413141257,
+            "measured_dbm": 0.014303819711058104
+          },
+          {
+            "VRMS": 0.2250325,
+            "VAVG": -0.01736456,
+            "FREQuency": 10000000.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22436153438648168,
+            "measured_dbm": 0.029267985538034322
+          },
+          {
+            "VRMS": 0.2250325,
+            "VAVG": -0.01736456,
+            "FREQuency": 10000000.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22436153438648168,
+            "measured_dbm": 0.029267985538034322
+          }
+        ]
+      }
+    },
+    {
+      "channel": 1,
+      "frequency_hz": 15000000.0,
+      "requested_dbm": 0,
+      "error_db": 0.05918542970038901,
+      "settings": {
+        "channel": 1,
+        "frequency_hz": 15000000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.354,
+        "predicted_power_dbm": 0.0015358184329750113,
+        "quantization_error_db": 0.0015358184329750113,
+        "calibrated_power_range_dbm": [
+          -30.517670555095968,
+          11.445075960128523
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 1,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 15000000.0,
+          "amplitude_vpp": 1.354,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.2251356516173418,
+        "measured_dbm": 0.05918542970038901,
+        "vpp_v": 0.648,
+        "dc_v": -0.01862207,
+        "frequency_measured_hz": 15151520.0,
+        "repeatability_db": 0.002441492401521521,
+        "readings": [
+          {
+            "VRMS": 0.2258794,
+            "VAVG": -0.0190769,
+            "FREQuency": 15151520.0,
+            "VPP": 0.64,
+            "vrms_ac_v": 0.2250723777604662,
+            "measured_dbm": 0.05674393729886749
+          },
+          {
+            "VRMS": 0.2259045,
+            "VAVG": -0.01862207,
+            "FREQuency": 15151520.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.2251356516173418,
+            "measured_dbm": 0.05918542970038901
+          },
+          {
+            "VRMS": 0.2259045,
+            "VAVG": -0.01862207,
+            "FREQuency": 15151520.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.2251356516173418,
+            "measured_dbm": 0.05918542970038901
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.13846394458651545,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.072,
+        "predicted_power_dbm": -25.014289990387606,
+        "quantization_error_db": -0.014289990387606366,
+        "calibrated_power_range_dbm": [
+          -30.000630657195813,
+          11.878453340450701
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 0.072,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.012776391153269338,
+        "measured_dbm": -24.861536055413485,
+        "vpp_v": 0.0372,
+        "dc_v": -0.001721069,
+        "frequency_measured_hz": 1515152.0,
+        "repeatability_db": 0.021582922974584307,
+        "readings": [
+          {
+            "VRMS": 0.01286612,
+            "VAVG": -0.001763544,
+            "FREQuency": 1515152.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012744683456816964,
+            "measured_dbm": -24.88311897838807
+          },
+          {
+            "VRMS": 0.01289179,
+            "VAVG": -0.001721069,
+            "FREQuency": 1515152.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012776391153269338,
+            "measured_dbm": -24.861536055413485
+          },
+          {
+            "VRMS": 0.01289179,
+            "VAVG": -0.001721069,
+            "FREQuency": 1515152.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012776391153269338,
+            "measured_dbm": -24.861536055413485
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": -16,
+      "error_db": 0.03869911831510109,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.202,
+        "predicted_power_dbm": -16.02115728862151,
+        "quantization_error_db": -0.02115728862150945,
+        "calibrated_power_range_dbm": [
+          -30.000630657195813,
+          11.878453340450701
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 0.202,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.035597537654489794,
+        "measured_dbm": -15.961300881684899,
+        "vpp_v": 0.104,
+        "dc_v": -0.001827759,
+        "frequency_measured_hz": 1515152.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.03564443,
+            "VAVG": -0.001827759,
+            "FREQuency": 1515152.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.035597537654489794,
+            "measured_dbm": -15.961300881684899
+          },
+          {
+            "VRMS": 0.03564443,
+            "VAVG": -0.001827759,
+            "FREQuency": 1515152.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.035597537654489794,
+            "measured_dbm": -15.961300881684899
+          },
+          {
+            "VRMS": 0.03564443,
+            "VAVG": -0.001827759,
+            "FREQuency": 1515152.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.035597537654489794,
+            "measured_dbm": -15.961300881684899
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.24050180756950912,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.568,
+        "predicted_power_dbm": -7.007275115654112,
+        "quantization_error_db": -0.0072751156541119855,
+        "calibrated_power_range_dbm": [
+          -30.000630657195813,
+          11.878453340450701
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 0.568,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.09715382681254661,
+        "measured_dbm": -7.240501807569509,
+        "vpp_v": 0.28,
+        "dc_v": -0.006909699,
+        "frequency_measured_hz": 1515152.0,
+        "repeatability_db": 0.0017931018587704628,
+        "readings": [
+          {
+            "VRMS": 0.09739923,
+            "VAVG": -0.006909699,
+            "FREQuency": 1515152.0,
+            "VPP": 0.28,
+            "vrms_ac_v": 0.09715382681254661,
+            "measured_dbm": -7.240501807569509
+          },
+          {
+            "VRMS": 0.09739923,
+            "VAVG": -0.006909699,
+            "FREQuency": 1515152.0,
+            "VPP": 0.28,
+            "vrms_ac_v": 0.09715382681254661,
+            "measured_dbm": -7.240501807569509
+          },
+          {
+            "VRMS": 0.09738089,
+            "VAVG": -0.006933106,
+            "FREQuency": 1515152.0,
+            "VPP": 0.28,
+            "vrms_ac_v": 0.09713377259421598,
+            "measured_dbm": -7.24229490942828
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": 0,
+      "error_db": 0.03273772199013644,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.271,
+        "predicted_power_dbm": 0.0015294949372882255,
+        "quantization_error_db": 0.0015294949372882255,
+        "calibrated_power_range_dbm": [
+          -30.000630657195813,
+          11.878453340450701
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 1.271,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.22445117758200137,
+        "measured_dbm": 0.03273772199013644,
+        "vpp_v": 0.648,
+        "dc_v": -0.02172577,
+        "frequency_measured_hz": 1492537.0,
+        "repeatability_db": 0.009889097520842237,
+        "readings": [
+          {
+            "VRMS": 0.2257605,
+            "VAVG": -0.02178595,
+            "FREQuency": 1515152.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.2247068662565688,
+            "measured_dbm": 0.04262681951097868
+          },
+          {
+            "VRMS": 0.2255002,
+            "VAVG": -0.02172577,
+            "FREQuency": 1492537.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22445117758200137,
+            "measured_dbm": 0.03273772199013644
+          },
+          {
+            "VRMS": 0.2255002,
+            "VAVG": -0.02172577,
+            "FREQuency": 1492537.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22445117758200137,
+            "measured_dbm": 0.03273772199013644
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": 7,
+      "error_db": 0.19805337892099661,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": 7.0,
+        "amplitude_vpp": 2.846,
+        "predicted_power_dbm": 6.999140954346808,
+        "quantization_error_db": -0.0008590456531916146,
+        "calibrated_power_range_dbm": [
+          -30.000630657195813,
+          11.878453340450701
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 2.846,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.5121387900639185,
+        "measured_dbm": 7.198053378920997,
+        "vpp_v": 1.5,
+        "dc_v": -0.04720734,
+        "frequency_measured_hz": 1492537.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.5143099,
+            "VAVG": -0.04720734,
+            "FREQuency": 1492537.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5121387900639185,
+            "measured_dbm": 7.198053378920997
+          },
+          {
+            "VRMS": 0.5143099,
+            "VAVG": -0.04720734,
+            "FREQuency": 1492537.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5121387900639185,
+            "measured_dbm": 7.198053378920997
+          },
+          {
+            "VRMS": 0.5143099,
+            "VAVG": -0.04720734,
+            "FREQuency": 1492537.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5121387900639185,
+            "measured_dbm": 7.198053378920997
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 1500000.0,
+      "requested_dbm": 10,
+      "error_db": 0.059953711653069064,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 1500000.0,
+        "requested_power_dbm": 10.0,
+        "amplitude_vpp": 4.025,
+        "predicted_power_dbm": 10.000294826964446,
+        "quantization_error_db": 0.00029482696444560474,
+        "calibrated_power_range_dbm": [
+          -30.000630657195813,
+          11.878453340450701
+        ],
+        "frequency_bracket_hz": [
+          1000000.0,
+          2000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 1500000.0,
+          "amplitude_vpp": 4.025,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.712004416853218,
+        "measured_dbm": 10.059953711653069,
+        "vpp_v": 2.06,
+        "dc_v": -0.04889633,
+        "frequency_measured_hz": 1515152.0,
+        "repeatability_db": 0.0014820076078692068,
+        "readings": [
+          {
+            "VRMS": 0.7139632,
+            "VAVG": -0.05118728,
+            "FREQuency": 1492537.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7121259111424338,
+            "measured_dbm": 10.061435719260938
+          },
+          {
+            "VRMS": 0.7136814,
+            "VAVG": -0.04889633,
+            "FREQuency": 1515152.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.712004416853218,
+            "measured_dbm": 10.059953711653069
+          },
+          {
+            "VRMS": 0.7136814,
+            "VAVG": -0.04889633,
+            "FREQuency": 1515152.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.712004416853218,
+            "measured_dbm": 10.059953711653069
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.07162893889738697,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.073,
+        "predicted_power_dbm": -25.011624027661565,
+        "quantization_error_db": -0.011624027661564895,
+        "calibrated_power_range_dbm": [
+          -30.122266900329965,
+          11.93237879646644
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 0.073,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.012678458374367879,
+        "measured_dbm": -24.928371061102613,
+        "vpp_v": 0.0368,
+        "dc_v": -0.001787961,
+        "frequency_measured_hz": 5434783.0,
+        "repeatability_db": 0.011749487748737408,
+        "readings": [
+          {
+            "VRMS": 0.01280391,
+            "VAVG": -0.001787961,
+            "FREQuency": 5434783.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.012678458374367879,
+            "measured_dbm": -24.928371061102613
+          },
+          {
+            "VRMS": 0.01280391,
+            "VAVG": -0.001787961,
+            "FREQuency": 5434783.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.012678458374367879,
+            "measured_dbm": -24.928371061102613
+          },
+          {
+            "VRMS": 0.01282226,
+            "VAVG": -0.001797659,
+            "FREQuency": 5494506.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012695620253745737,
+            "measured_dbm": -24.916621573353876
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": -16,
+      "error_db": -0.02000763700421615,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.204,
+        "predicted_power_dbm": -16.01664864383246,
+        "quantization_error_db": -0.01664864383246112,
+        "calibrated_power_range_dbm": [
+          -30.122266900329965,
+          11.93237879646644
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 0.204,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.03535774996291455,
+        "measured_dbm": -16.020007637004216,
+        "vpp_v": 0.102,
+        "dc_v": -0.002060196,
+        "frequency_measured_hz": 5555556.0,
+        "repeatability_db": 0.003004309009909889,
+        "readings": [
+          {
+            "VRMS": 0.03542877,
+            "VAVG": -0.002040131,
+            "FREQuency": 5494506.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.03536998175311572,
+            "measured_dbm": -16.017003327994306
+          },
+          {
+            "VRMS": 0.03541772,
+            "VAVG": -0.002060196,
+            "FREQuency": 5555556.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.03535774996291455,
+            "measured_dbm": -16.020007637004216
+          },
+          {
+            "VRMS": 0.03541772,
+            "VAVG": -0.002060196,
+            "FREQuency": 5555556.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.03535774996291455,
+            "measured_dbm": -16.020007637004216
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.17365314679602228,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.573,
+        "predicted_power_dbm": -7.007493368104254,
+        "quantization_error_db": -0.007493368104253939,
+        "calibrated_power_range_dbm": [
+          -30.122266900329965,
+          11.93237879646644
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 0.573,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.09790443034569651,
+        "measured_dbm": -7.173653146796022,
+        "vpp_v": 0.284,
+        "dc_v": -0.007254181,
+        "frequency_measured_hz": 5494506.0,
+        "repeatability_db": 0.004197181786317117,
+        "readings": [
+          {
+            "VRMS": 0.09817281,
+            "VAVG": -0.007254181,
+            "FREQuency": 5494506.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09790443034569651,
+            "measured_dbm": -7.173653146796022
+          },
+          {
+            "VRMS": 0.09817281,
+            "VAVG": -0.007254181,
+            "FREQuency": 5494506.0,
+            "VPP": 0.284,
+            "vrms_ac_v": 0.09790443034569651,
+            "measured_dbm": -7.173653146796022
+          },
+          {
+            "VRMS": 0.09821729,
+            "VAVG": -0.007217377,
+            "FREQuency": 5494506.0,
+            "VPP": 0.288,
+            "vrms_ac_v": 0.09795175100111264,
+            "measured_dbm": -7.169455965009705
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": 0,
+      "error_db": -0.011552082981172196,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.282,
+        "predicted_power_dbm": -0.0023756432513301895,
+        "quantization_error_db": -0.0023756432513301895,
+        "calibrated_power_range_dbm": [
+          -30.122266900329965,
+          11.93237879646644
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 1.282,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.22330960225288032,
+        "measured_dbm": -0.011552082981172196,
+        "vpp_v": 0.648,
+        "dc_v": -0.02265552,
+        "frequency_measured_hz": 5434783.0,
+        "repeatability_db": 0.010892112252883326,
+        "readings": [
+          {
+            "VRMS": 0.2247266,
+            "VAVG": -0.02257526,
+            "FREQuency": 5494506.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22358980831758052,
+            "measured_dbm": -0.0006599707282888691
+          },
+          {
+            "VRMS": 0.2244559,
+            "VAVG": -0.02265552,
+            "FREQuency": 5434783.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22330960225288032,
+            "measured_dbm": -0.011552082981172196
+          },
+          {
+            "VRMS": 0.2244559,
+            "VAVG": -0.02265552,
+            "FREQuency": 5434783.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.22330960225288032,
+            "measured_dbm": -0.011552082981172196
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": 7,
+      "error_db": 0.20225349282866834,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": 7.0,
+        "amplitude_vpp": 2.853,
+        "predicted_power_dbm": 6.998723615054041,
+        "quantization_error_db": -0.0012763849459593857,
+        "calibrated_power_range_dbm": [
+          -30.122266900329965,
+          11.93237879646644
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 2.853,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.5123864977257393,
+        "measured_dbm": 7.202253492828668,
+        "vpp_v": 1.5,
+        "dc_v": -0.04680603,
+        "frequency_measured_hz": 5494506.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.5145199,
+            "VAVG": -0.04680603,
+            "FREQuency": 5494506.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5123864977257393,
+            "measured_dbm": 7.202253492828668
+          },
+          {
+            "VRMS": 0.5145199,
+            "VAVG": -0.04680603,
+            "FREQuency": 5494506.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5123864977257393,
+            "measured_dbm": 7.202253492828668
+          },
+          {
+            "VRMS": 0.5145199,
+            "VAVG": -0.04680603,
+            "FREQuency": 5494506.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5123864977257393,
+            "measured_dbm": 7.202253492828668
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 5500000.0,
+      "requested_dbm": 10,
+      "error_db": 0.0834746689533521,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 5500000.0,
+        "requested_power_dbm": 10.0,
+        "amplitude_vpp": 4.014,
+        "predicted_power_dbm": 10.000923191415897,
+        "quantization_error_db": 0.0009231914158966958,
+        "calibrated_power_range_dbm": [
+          -30.122266900329965,
+          11.93237879646644
+        ],
+        "frequency_bracket_hz": [
+          5000000.0,
+          6000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 5500000.0,
+          "amplitude_vpp": 4.014,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.7139351023354087,
+        "measured_dbm": 10.083474668953352,
+        "vpp_v": 2.06,
+        "dc_v": -0.05401336,
+        "frequency_measured_hz": 5494506.0,
+        "repeatability_db": 0.0009209636935629817,
+        "readings": [
+          {
+            "VRMS": 0.7159754,
+            "VAVG": -0.05401336,
+            "FREQuency": 5494506.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7139351023354087,
+            "measured_dbm": 10.083474668953352
+          },
+          {
+            "VRMS": 0.7159754,
+            "VAVG": -0.05401336,
+            "FREQuency": 5494506.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7139351023354087,
+            "measured_dbm": 10.083474668953352
+          },
+          {
+            "VRMS": 0.7160646,
+            "VAVG": -0.05615387,
+            "FREQuency": 5494506.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7138594079068953,
+            "measured_dbm": 10.08255370525979
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.14469054834170691,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.075,
+        "predicted_power_dbm": -24.993711322614725,
+        "quantization_error_db": 0.00628867738527461,
+        "calibrated_power_range_dbm": [
+          -30.31789757347805,
+          11.548902593233114
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 0.075,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.012785553374964847,
+        "measured_dbm": -24.855309451658293,
+        "vpp_v": 0.0372,
+        "dc_v": -0.001646155,
+        "frequency_measured_hz": 9433962.0,
+        "repeatability_db": 0.004898338396436941,
+        "readings": [
+          {
+            "VRMS": 0.01290664,
+            "VAVG": -0.001710702,
+            "FREQuency": 9615384.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.01279276571960872,
+            "measured_dbm": -24.850411113261856
+          },
+          {
+            "VRMS": 0.01289109,
+            "VAVG": -0.001646155,
+            "FREQuency": 9433962.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012785553374964847,
+            "measured_dbm": -24.855309451658293
+          },
+          {
+            "VRMS": 0.01289109,
+            "VAVG": -0.001646155,
+            "FREQuency": 9433962.0,
+            "VPP": 0.0372,
+            "vrms_ac_v": 0.012785553374964847,
+            "measured_dbm": -24.855309451658293
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": -16,
+      "error_db": 0.05802452339821329,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.208,
+        "predicted_power_dbm": -15.985206579542407,
+        "quantization_error_db": 0.014793420457593243,
+        "calibrated_power_range_dbm": [
+          -30.31789757347805,
+          11.548902593233114
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 0.208,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.03567682748359887,
+        "measured_dbm": -15.941975476601787,
+        "vpp_v": 0.104,
+        "dc_v": -0.002083618,
+        "frequency_measured_hz": 9433962.0,
+        "repeatability_db": 0.0034231104300666004,
+        "readings": [
+          {
+            "VRMS": 0.03573762,
+            "VAVG": -0.002083618,
+            "FREQuency": 9433962.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.03567682748359887,
+            "measured_dbm": -15.941975476601787
+          },
+          {
+            "VRMS": 0.03573762,
+            "VAVG": -0.002083618,
+            "FREQuency": 9433962.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.03567682748359887,
+            "measured_dbm": -15.941975476601787
+          },
+          {
+            "VRMS": 0.03574651,
+            "VAVG": -0.001993317,
+            "FREQuency": 9433962.0,
+            "VPP": 0.104,
+            "vrms_ac_v": 0.035690890497683175,
+            "measured_dbm": -15.93855236617172
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.24001135303781496,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.586,
+        "predicted_power_dbm": -6.997646557588427,
+        "quantization_error_db": 0.0023534424115734254,
+        "calibrated_power_range_dbm": [
+          -30.31789757347805,
+          11.548902593233114
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 0.586,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.09715931282283731,
+        "measured_dbm": -7.240011353037815,
+        "vpp_v": 0.276,
+        "dc_v": -0.007408021,
+        "frequency_measured_hz": 9433962.0,
+        "repeatability_db": 0.00334162708321184,
+        "readings": [
+          {
+            "VRMS": 0.09747379,
+            "VAVG": -0.007344483,
+            "FREQuency": 9615384.0,
+            "VPP": 0.28,
+            "vrms_ac_v": 0.09719669905108308,
+            "measured_dbm": -7.236669725954603
+          },
+          {
+            "VRMS": 0.09744132,
+            "VAVG": -0.007408021,
+            "FREQuency": 9433962.0,
+            "VPP": 0.276,
+            "vrms_ac_v": 0.09715931282283731,
+            "measured_dbm": -7.240011353037815
+          },
+          {
+            "VRMS": 0.09744132,
+            "VAVG": -0.007408021,
+            "FREQuency": 9433962.0,
+            "VPP": 0.276,
+            "vrms_ac_v": 0.09715931282283731,
+            "measured_dbm": -7.240011353037815
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": 0,
+      "error_db": 0.08246775531133463,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.312,
+        "predicted_power_dbm": 0.0015580722936898161,
+        "quantization_error_db": 0.0015580722936898161,
+        "calibrated_power_range_dbm": [
+          -30.31789757347805,
+          11.548902593233114
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 1.312,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.225739932025021,
+        "measured_dbm": 0.08246775531133463,
+        "vpp_v": 0.648,
+        "dc_v": -0.02305017,
+        "frequency_measured_hz": 9433962.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.2269137,
+            "VAVG": -0.02305017,
+            "FREQuency": 9433962.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.225739932025021,
+            "measured_dbm": 0.08246775531133463
+          },
+          {
+            "VRMS": 0.2269137,
+            "VAVG": -0.02305017,
+            "FREQuency": 9433962.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.225739932025021,
+            "measured_dbm": 0.08246775531133463
+          },
+          {
+            "VRMS": 0.2269137,
+            "VAVG": -0.02305017,
+            "FREQuency": 9433962.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.225739932025021,
+            "measured_dbm": 0.08246775531133463
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": 7,
+      "error_db": 0.24632424181017498,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": 7.0,
+        "amplitude_vpp": 2.949,
+        "predicted_power_dbm": 7.000756832560029,
+        "quantization_error_db": 0.0007568325600288972,
+        "calibrated_power_range_dbm": [
+          -30.31789757347805,
+          11.548902593233114
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 2.949,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.514992867531697,
+        "measured_dbm": 7.246324241810175,
+        "vpp_v": 1.5,
+        "dc_v": -0.0483612,
+        "frequency_measured_hz": 9433962.0,
+        "repeatability_db": 0.00871021023034757,
+        "readings": [
+          {
+            "VRMS": 0.5166625,
+            "VAVG": -0.04747497,
+            "FREQuency": 9433962.0,
+            "VPP": 1.48,
+            "vrms_ac_v": 0.5144766915320353,
+            "measured_dbm": 7.237614031579827
+          },
+          {
+            "VRMS": 0.5172586,
+            "VAVG": -0.0483612,
+            "FREQuency": 9433962.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.514992867531697,
+            "measured_dbm": 7.246324241810175
+          },
+          {
+            "VRMS": 0.5172586,
+            "VAVG": -0.0483612,
+            "FREQuency": 9433962.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.514992867531697,
+            "measured_dbm": 7.246324241810175
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 9500000.0,
+      "requested_dbm": 10,
+      "error_db": 0.060151792657840986,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 9500000.0,
+        "requested_power_dbm": 10.0,
+        "amplitude_vpp": 4.177,
+        "predicted_power_dbm": 9.999653931737932,
+        "quantization_error_db": -0.0003460682620683997,
+        "calibrated_power_range_dbm": [
+          -30.31789757347805,
+          11.548902593233114
+        ],
+        "frequency_bracket_hz": [
+          9000000.0,
+          10000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 9500000.0,
+          "amplitude_vpp": 4.177,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.7120206542410185,
+        "measured_dbm": 10.060151792657841,
+        "vpp_v": 2.06,
+        "dc_v": -0.05367889,
+        "frequency_measured_hz": 9615384.0,
+        "repeatability_db": 0.009955688275471886,
+        "readings": [
+          {
+            "VRMS": 0.7140412,
+            "VAVG": -0.05367889,
+            "FREQuency": 9615384.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7120206542410185,
+            "measured_dbm": 10.060151792657841
+          },
+          {
+            "VRMS": 0.7140412,
+            "VAVG": -0.05367889,
+            "FREQuency": 9615384.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7120206542410185,
+            "measured_dbm": 10.060151792657841
+          },
+          {
+            "VRMS": 0.7149022,
+            "VAVG": -0.05429764,
+            "FREQuency": 9433962.0,
+            "VPP": 2.06,
+            "vrms_ac_v": 0.7128372337744925,
+            "measured_dbm": 10.070107480933313
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.18649165331197182,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.076,
+        "predicted_power_dbm": -24.94664711666959,
+        "quantization_error_db": 0.05335288333041177,
+        "calibrated_power_range_dbm": [
+          -30.387996527257542,
+          11.498784077869582
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 0.076,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.012847232532255963,
+        "measured_dbm": -24.813508346688028,
+        "vpp_v": 0.0368,
+        "dc_v": -0.001716388,
+        "frequency_measured_hz": 10638300.0,
+        "repeatability_db": 0.02467374174909054,
+        "readings": [
+          {
+            "VRMS": 0.01291612,
+            "VAVG": -0.001646155,
+            "FREQuency": 10416670.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.012810789576383456,
+            "measured_dbm": -24.83818208843712
+          },
+          {
+            "VRMS": 0.01296138,
+            "VAVG": -0.001716388,
+            "FREQuency": 10638300.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.012847232532255963,
+            "measured_dbm": -24.813508346688028
+          },
+          {
+            "VRMS": 0.01296138,
+            "VAVG": -0.001716388,
+            "FREQuency": 10638300.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.012847232532255963,
+            "measured_dbm": -24.813508346688028
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": -16,
+      "error_db": 0.04789765491145381,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.209,
+        "predicted_power_dbm": -16.013140213402362,
+        "quantization_error_db": -0.013140213402362377,
+        "calibrated_power_range_dbm": [
+          -30.387996527257542,
+          11.498784077869582
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 0.209,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.03563525615119806,
+        "measured_dbm": -15.952102345088546,
+        "vpp_v": 0.102,
+        "dc_v": -0.001909699,
+        "frequency_measured_hz": 10638300.0,
+        "repeatability_db": 0.0025417316262750234,
+        "readings": [
+          {
+            "VRMS": 0.03568639,
+            "VAVG": -0.001909699,
+            "FREQuency": 10638300.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.03563525615119806,
+            "measured_dbm": -15.952102345088546
+          },
+          {
+            "VRMS": 0.03568639,
+            "VAVG": -0.001909699,
+            "FREQuency": 10638300.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.03563525615119806,
+            "measured_dbm": -15.952102345088546
+          },
+          {
+            "VRMS": 0.03570269,
+            "VAVG": -0.002016724,
+            "FREQuency": 10416670.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.03564568553898107,
+            "measured_dbm": -15.949560613462271
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.22566280826514884,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.591,
+        "predicted_power_dbm": -6.9973357901701965,
+        "quantization_error_db": 0.002664209829803532,
+        "calibrated_power_range_dbm": [
+          -30.387996527257542,
+          11.498784077869582
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 0.591,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.09731994655422373,
+        "measured_dbm": -7.225662808265149,
+        "vpp_v": 0.276,
+        "dc_v": -0.007719056,
+        "frequency_measured_hz": 10416670.0,
+        "repeatability_db": 0.009422166126600295,
+        "readings": [
+          {
+            "VRMS": 0.09770504,
+            "VAVG": -0.007384613,
+            "FREQuency": 10416670.0,
+            "VPP": 0.28,
+            "vrms_ac_v": 0.0974255732969626,
+            "measured_dbm": -7.2162406421385485
+          },
+          {
+            "VRMS": 0.09762559,
+            "VAVG": -0.007719056,
+            "FREQuency": 10416670.0,
+            "VPP": 0.276,
+            "vrms_ac_v": 0.09731994655422373,
+            "measured_dbm": -7.225662808265149
+          },
+          {
+            "VRMS": 0.09762559,
+            "VAVG": -0.007719056,
+            "FREQuency": 10416670.0,
+            "VPP": 0.276,
+            "vrms_ac_v": 0.09731994655422373,
+            "measured_dbm": -7.225662808265149
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": 0,
+      "error_db": 0.07744457257420131,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": 0.0,
+        "amplitude_vpp": 1.323,
+        "predicted_power_dbm": 0.001874619812141487,
+        "quantization_error_db": 0.001874619812141487,
+        "calibrated_power_range_dbm": [
+          -30.387996527257542,
+          11.498784077869582
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 1.323,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.2256094209139326,
+        "measured_dbm": 0.07744457257420131,
+        "vpp_v": 0.648,
+        "dc_v": -0.0231438,
+        "frequency_measured_hz": 10416670.0,
+        "repeatability_db": 0.013391718176902712,
+        "readings": [
+          {
+            "VRMS": 0.2267934,
+            "VAVG": -0.0231438,
+            "FREQuency": 10416670.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.2256094209139326,
+            "measured_dbm": 0.07744457257420131
+          },
+          {
+            "VRMS": 0.2267934,
+            "VAVG": -0.0231438,
+            "FREQuency": 10416670.0,
+            "VPP": 0.648,
+            "vrms_ac_v": 0.2256094209139326,
+            "measured_dbm": 0.07744457257420131
+          },
+          {
+            "VRMS": 0.2270818,
+            "VAVG": -0.02256854,
+            "FREQuency": 10416670.0,
+            "VPP": 0.656,
+            "vrms_ac_v": 0.2259575289595556,
+            "measured_dbm": 0.09083629075110403
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": 7,
+      "error_db": 0.2537418399820721,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": 7.0,
+        "amplitude_vpp": 2.971,
+        "predicted_power_dbm": 7.000234040966614,
+        "quantization_error_db": 0.00023404096661394647,
+        "calibrated_power_range_dbm": [
+          -30.387996527257542,
+          11.498784077869582
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 2.971,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.5154328502953982,
+        "measured_dbm": 7.253741839982072,
+        "vpp_v": 1.5,
+        "dc_v": -0.05274246,
+        "frequency_measured_hz": 10638300.0,
+        "repeatability_db": 0.010011620179630754,
+        "readings": [
+          {
+            "VRMS": 0.5181243,
+            "VAVG": -0.05274246,
+            "FREQuency": 10638300.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5154328502953982,
+            "measured_dbm": 7.253741839982072
+          },
+          {
+            "VRMS": 0.5181243,
+            "VAVG": -0.05274246,
+            "FREQuency": 10638300.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5154328502953982,
+            "measured_dbm": 7.253741839982072
+          },
+          {
+            "VRMS": 0.5182173,
+            "VAVG": -0.04759201,
+            "FREQuency": 10638300.0,
+            "VPP": 1.5,
+            "vrms_ac_v": 0.5160272963743778,
+            "measured_dbm": 7.263753460161703
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 10500000.0,
+      "requested_dbm": 10,
+      "error_db": 0.07835117710225425,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 10500000.0,
+        "requested_power_dbm": 10.0,
+        "amplitude_vpp": 4.204,
+        "predicted_power_dbm": 10.000232253323748,
+        "quantization_error_db": 0.0002322533237482105,
+        "calibrated_power_range_dbm": [
+          -30.387996527257542,
+          11.498784077869582
+        ],
+        "frequency_bracket_hz": [
+          10010000.0,
+          11000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 10500000.0,
+          "amplitude_vpp": 4.204,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.7135141020430273,
+        "measured_dbm": 10.078351177102254,
+        "vpp_v": 2.04,
+        "dc_v": -0.05096985,
+        "frequency_measured_hz": 10638300.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.7153323,
+            "VAVG": -0.05096985,
+            "FREQuency": 10638300.0,
+            "VPP": 2.04,
+            "vrms_ac_v": 0.7135141020430273,
+            "measured_dbm": 10.078351177102254
+          },
+          {
+            "VRMS": 0.7153323,
+            "VAVG": -0.05096985,
+            "FREQuency": 10638300.0,
+            "VPP": 2.04,
+            "vrms_ac_v": 0.7135141020430273,
+            "measured_dbm": 10.078351177102254
+          },
+          {
+            "VRMS": 0.7153323,
+            "VAVG": -0.05096985,
+            "FREQuency": 10638300.0,
+            "VPP": 2.04,
+            "vrms_ac_v": 0.7135141020430273,
+            "measured_dbm": 10.078351177102254
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 14500000.0,
+      "requested_dbm": -25,
+      "error_db": 0.05752886717038308,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 14500000.0,
+        "requested_power_dbm": -25.0,
+        "amplitude_vpp": 0.078,
+        "predicted_power_dbm": -24.96578532454744,
+        "quantization_error_db": 0.03421467545256007,
+        "calibrated_power_range_dbm": [
+          -30.618974334740386,
+          11.265431146761346
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 14500000.0,
+          "amplitude_vpp": 0.078,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.01265789373916431,
+        "measured_dbm": -24.942471132829617,
+        "vpp_v": 0.0368,
+        "dc_v": -0.001862875,
+        "frequency_measured_hz": 14285720.0,
+        "repeatability_db": 0.02161411718513051,
+        "readings": [
+          {
+            "VRMS": 0.01273555,
+            "VAVG": -0.001663544,
+            "FREQuency": 14705880.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.012626434776395275,
+            "measured_dbm": -24.964085250014747
+          },
+          {
+            "VRMS": 0.01279424,
+            "VAVG": -0.001862875,
+            "FREQuency": 14285720.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.01265789373916431,
+            "measured_dbm": -24.942471132829617
+          },
+          {
+            "VRMS": 0.01279424,
+            "VAVG": -0.001862875,
+            "FREQuency": 14285720.0,
+            "VPP": 0.0368,
+            "vrms_ac_v": 0.01265789373916431,
+            "measured_dbm": -24.942471132829617
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 14500000.0,
+      "requested_dbm": -16,
+      "error_db": -0.07144801887676877,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 14500000.0,
+        "requested_power_dbm": -16.0,
+        "amplitude_vpp": 0.213,
+        "predicted_power_dbm": -16.01679654136621,
+        "quantization_error_db": -0.01679654136621167,
+        "calibrated_power_range_dbm": [
+          -30.618974334740386,
+          11.265431146761346
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 14500000.0,
+          "amplitude_vpp": 0.213,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.035148969852735995,
+        "measured_dbm": -16.07144801887677,
+        "vpp_v": 0.102,
+        "dc_v": -0.002234116,
+        "frequency_measured_hz": 14705880.0,
+        "repeatability_db": 0.0,
+        "readings": [
+          {
+            "VRMS": 0.0352199,
+            "VAVG": -0.002234116,
+            "FREQuency": 14705880.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.035148969852735995,
+            "measured_dbm": -16.07144801887677
+          },
+          {
+            "VRMS": 0.0352199,
+            "VAVG": -0.002234116,
+            "FREQuency": 14705880.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.035148969852735995,
+            "measured_dbm": -16.07144801887677
+          },
+          {
+            "VRMS": 0.0352199,
+            "VAVG": -0.002234116,
+            "FREQuency": 14705880.0,
+            "VPP": 0.102,
+            "vrms_ac_v": 0.035148969852735995,
+            "measured_dbm": -16.07144801887677
+          }
+        ]
+      }
+    },
+    {
+      "channel": 2,
+      "frequency_hz": 14500000.0,
+      "requested_dbm": -7,
+      "error_db": -0.35921637434783005,
+      "settings": {
+        "channel": 2,
+        "frequency_hz": 14500000.0,
+        "requested_power_dbm": -7.0,
+        "amplitude_vpp": 0.605,
+        "predicted_power_dbm": -7.001431757044147,
+        "quantization_error_db": -0.0014317570441466643,
+        "calibrated_power_range_dbm": [
+          -30.618974334740386,
+          11.265431146761346
+        ],
+        "frequency_bracket_hz": [
+          14000000.0,
+          15000000.0
+        ],
+        "load_ohms": 50,
+        "waveform": "SINE",
+        "offset_v": 0,
+        "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+        "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+        "state": {
+          "channel": 2,
+          "enabled": true,
+          "waveform": "SINE",
+          "waveform_id": 0,
+          "frequency_hz": 14500000.0,
+          "amplitude_vpp": 0.605,
+          "offset_v": 0.0,
+          "duty_percent": 50.0
+        },
+        "scope_verified_now": false
+      },
+      "measurement": {
+        "vrms_ac_v": 0.09583500800204796,
+        "measured_dbm": -7.35921637434783,
+        "vpp_v": 0.276,
+        "dc_v": -0.008461548,
+        "frequency_measured_hz": 14705880.0,
+        "repeatability_db": 0.00029489328636245205,
+        "readings": [
+          {
+            "VRMS": 0.09620755,
+            "VAVG": -0.008421417,
+            "FREQuency": 14705880.0,
+            "VPP": 0.276,
+            "vrms_ac_v": 0.0958382617367125,
+            "measured_dbm": -7.358921481061468
+          },
+          {
+            "VRMS": 0.09620783,
+            "VAVG": -0.008461548,
+            "FREQuency": 14705880.0,
+            "VPP": 0.276,
+            "vrms_ac_v": 0.09583500800204796,
+            "measured_dbm": -7.35921637434783
+          },
+          {
+            "VRMS": 0.09620783,
+            "VAVG": -0.008461548,
+            "FREQuency": 14705880.0,
+            "VPP": 0.276,
+            "vrms_ac_v": 0.09583500800204796,
+            "measured_dbm": -7.35921637434783
+          }
+        ]
+      }
+    }
+  ],
+  "calibration": {
+    "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:02:15.471695+00:00",
+    "created_at": "2026-10-03T20:02:15.471695+00:00",
+    "device": {
+      "device_type": 15,
+      "serial_number": 1816400000,
+      "baudrate": 115200,
+      "max_sine_hz": 15000000.0,
+      "backend": "on1arf Python library with bounded serial transport"
+    },
+    "load_ohms": 50,
+    "waveform": "SINE",
+    "offset_v": 0,
+    "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+    "method": "Median of AC RMS = sqrt(VRMS^2 - VAVG^2); 16-acquisition scope averaging",
+    "channels": {
+      "1": {
+        "frequencies_hz": [
+          1000000.0,
+          2000000.0,
+          3000000.0,
+          4000000.0,
+          5000000.0,
+          6000000.0,
+          7000000.0,
+          8000000.0,
+          9000000.0,
+          10000000.0,
+          10010000.0,
+          11000000.0,
+          12000000.0,
+          13000000.0,
+          14000000.0,
+          15000000.0
+        ],
+        "power_range_dbm_across_all_frequencies": [
+          -29.859488741101888,
+          11.445075960128523
+        ],
+        "points": 128
+      },
+      "2": {
+        "frequencies_hz": [
+          1000000.0,
+          2000000.0,
+          3000000.0,
+          4000000.0,
+          5000000.0,
+          6000000.0,
+          7000000.0,
+          8000000.0,
+          9000000.0,
+          10000000.0,
+          10010000.0,
+          11000000.0,
+          12000000.0,
+          13000000.0,
+          14000000.0,
+          15000000.0
+        ],
+        "power_range_dbm_across_all_frequencies": [
+          -29.984094573316753,
+          11.212640561661873
+        ],
+        "points": 128
+      }
+    },
+    "limitations": "Scope-referenced AC power of a sine wave into physical 50-ohm loads. Includes measured cable loss; not a traceable absolute RF power calibration or a measurement of fundamental power alone."
+  },
+  "error": "Power verification failed: -0.359 dB error",
+  "final_state": {
+    "mode": "WAVE_CH1",
+    "phase_deg": 0.0,
+    "channels": [
+      {
+        "channel": 1,
+        "enabled": false,
+        "waveform": "SINE",
+        "waveform_id": 0,
+        "frequency_hz": 15000000.0,
+        "amplitude_vpp": 1.354,
+        "offset_v": 0.0,
+        "duty_percent": 50.0
+      },
+      {
+        "channel": 2,
+        "enabled": false,
+        "waveform": "SINE",
+        "waveform_id": 0,
+        "frequency_hz": 14500000.0,
+        "amplitude_vpp": 0.605,
+        "offset_v": 0.0,
+        "duty_percent": 50.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,639 @@
+{
+  "schema_version": 1,
+  "status": "incomplete",
+  "created_at": "2026-10-03T20:29:24.009421+00:00",
+  "load_ohms": 50,
+  "load_description": "External 50-ohm terminations at scope CH1 and CH3; operator confirmed",
+  "waveform": "SINE",
+  "offset_v": 0,
+  "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+  "method": "Median of AC RMS = sqrt(VRMS^2 - VAVG^2); scope acquisition NORM",
+  "channels": {
+    "1": {
+      "scope_channel": 1,
+      "curves": [
+        {
+          "frequency_hz": 1000000.0,
+          "points": [
+            {
+              "vrms_ac_v": 0.10497837858330532,
+              "measured_dbm": -6.567702829368427,
+              "vpp_v": 0.3,
+              "dc_v": -0.005709015,
+              "vpp_sine_dbm": -6.478174818886375,
+              "frequency_measured_hz": 1000000.0,
+              "repeatability_db": 0.009787669853046133,
+              "readings": [
+                {
+                  "VRMS": 0.1051666,
+                  "VAVG": -0.005638794,
+                  "FREQuency": 1000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10501532153826681,
+                  "measured_dbm": -6.564646714515229,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1050543,
+                  "VAVG": -0.005745819,
+                  "FREQuency": 1000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.1048970519724422,
+                  "measured_dbm": -6.574434384368275,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1051335,
+                  "VAVG": -0.005709015,
+                  "FREQuency": 1000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10497837858330532,
+                  "measured_dbm": -6.567702829368427,
+                  "vpp_sine_dbm": -6.478174818886375
+                }
+              ],
+              "setting_vpp": 0.6,
+              "scope_scale_v_div": 0.1
+            },
+            {
+              "vrms_ac_v": 0.5504690170938481,
+              "measured_dbm": 7.824957555080702,
+              "vpp_v": 1.6,
+              "dc_v": -0.02182281,
+              "vpp_sine_dbm": 8.061799739838873,
+              "frequency_measured_hz": 1000000.0,
+              "repeatability_db": 0.005172147399071569,
+              "readings": [
+                {
+                  "VRMS": 0.5510012,
+                  "VAVG": -0.02182281,
+                  "FREQuency": 1000000.0,
+                  "VPP": 1.6,
+                  "vrms_ac_v": 0.5505688761319004,
+                  "measured_dbm": 7.826533095017338,
+                  "vpp_sine_dbm": 8.061799739838873
+                },
+                {
+                  "VRMS": 0.5506573,
+                  "VAVG": -0.02140472,
+                  "FREQuency": 1000000.0,
+                  "VPP": 1.62,
+                  "vrms_ac_v": 0.5502411289653034,
+                  "measured_dbm": 7.821360947618267,
+                  "vpp_sine_dbm": 8.169700377572996
+                },
+                {
+                  "VRMS": 0.5509074,
+                  "VAVG": -0.02197327,
+                  "FREQuency": 1000000.0,
+                  "VPP": 1.6,
+                  "vrms_ac_v": 0.5504690170938481,
+                  "measured_dbm": 7.824957555080702,
+                  "vpp_sine_dbm": 8.061799739838873
+                }
+              ],
+              "setting_vpp": 3.0,
+              "scope_scale_v_div": 0.5
+            }
+          ]
+        },
+        {
+          "frequency_hz": 2000000.0,
+          "points": [
+            {
+              "vrms_ac_v": 0.10461389507923888,
+              "measured_dbm": -6.597912594521144,
+              "vpp_v": 0.3,
+              "dc_v": -0.0063378,
+              "vpp_sine_dbm": -6.478174818886375,
+              "frequency_measured_hz": 2000000.0,
+              "repeatability_db": 0.0037322565067423596,
+              "readings": [
+                {
+                  "VRMS": 0.1047915,
+                  "VAVG": -0.006103668,
+                  "FREQuency": 2000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.1046135923730553,
+                  "measured_dbm": -6.597937727667227,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1048057,
+                  "VAVG": -0.0063378,
+                  "FREQuency": 2000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10461389507923888,
+                  "measured_dbm": -6.597912594521144,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1048521,
+                  "VAVG": -0.00636789,
+                  "FREQuency": 2000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10465855364640723,
+                  "measured_dbm": -6.5942054711604845,
+                  "vpp_sine_dbm": -6.478174818886375
+                }
+              ],
+              "setting_vpp": 0.6,
+              "scope_scale_v_div": 0.1
+            },
+            {
+              "vrms_ac_v": 0.5488249803984216,
+              "measured_dbm": 7.798977367839942,
+              "vpp_v": 1.58,
+              "dc_v": -0.01964889,
+              "vpp_sine_dbm": 7.9525418258088285,
+              "frequency_measured_hz": 2000000.0,
+              "repeatability_db": 0.00567264694427827,
+              "readings": [
+                {
+                  "VRMS": 0.5491084,
+                  "VAVG": -0.01844482,
+                  "FREQuency": 2000000.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5487985272991607,
+                  "measured_dbm": 7.798558702060285,
+                  "vpp_sine_dbm": 7.9525418258088285
+                },
+                {
+                  "VRMS": 0.5491766,
+                  "VAVG": -0.01964889,
+                  "FREQuency": 2000000.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5488249803984216,
+                  "measured_dbm": 7.798977367839942,
+                  "vpp_sine_dbm": 7.9525418258088285
+                },
+                {
+                  "VRMS": 0.5495541,
+                  "VAVG": -0.02088623,
+                  "FREQuency": 2000000.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5491570578834412,
+                  "measured_dbm": 7.804231349004564,
+                  "vpp_sine_dbm": 7.9525418258088285
+                }
+              ],
+              "setting_vpp": 3.0,
+              "scope_scale_v_div": 0.5
+            }
+          ]
+        },
+        {
+          "frequency_hz": 3000000.0,
+          "points": [
+            {
+              "vrms_ac_v": 0.10447890552558596,
+              "measured_dbm": -6.609127753769355,
+              "vpp_v": 0.3,
+              "dc_v": -0.006327759,
+              "vpp_sine_dbm": -6.478174818886375,
+              "frequency_measured_hz": 2985075.0,
+              "repeatability_db": 0.011430747896311821,
+              "readings": [
+                {
+                  "VRMS": 0.104691,
+                  "VAVG": -0.006327759,
+                  "FREQuency": 3030303.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10449959304723593,
+                  "measured_dbm": -6.6074080598127924,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1045516,
+                  "VAVG": -0.006290985,
+                  "FREQuency": 2985075.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10436216062486332,
+                  "measured_dbm": -6.618838807709104,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1046808,
+                  "VAVG": -0.006498322,
+                  "FREQuency": 2985075.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10447890552558596,
+                  "measured_dbm": -6.609127753769355,
+                  "vpp_sine_dbm": -6.478174818886375
+                }
+              ],
+              "setting_vpp": 0.6,
+              "scope_scale_v_div": 0.1
+            },
+            {
+              "vrms_ac_v": 0.5484643712298314,
+              "measured_dbm": 7.793268369481464,
+              "vpp_v": 1.6,
+              "dc_v": -0.01779266,
+              "vpp_sine_dbm": 8.061799739838873,
+              "frequency_measured_hz": 2985075.0,
+              "repeatability_db": 0.012933412995153049,
+              "readings": [
+                {
+                  "VRMS": 0.5480952,
+                  "VAVG": -0.02098663,
+                  "FREQuency": 3030303.0,
+                  "VPP": 1.6,
+                  "vrms_ac_v": 0.5476932623506364,
+                  "measured_dbm": 7.781047923218514,
+                  "vpp_sine_dbm": 8.061799739838873
+                },
+                {
+                  "VRMS": 0.5487617,
+                  "VAVG": -0.01663879,
+                  "FREQuency": 2941176.0,
+                  "VPP": 1.6,
+                  "vrms_ac_v": 0.5485093928587057,
+                  "measured_dbm": 7.793981336213667,
+                  "vpp_sine_dbm": 8.061799739838873
+                },
+                {
+                  "VRMS": 0.5487529,
+                  "VAVG": -0.01779266,
+                  "FREQuency": 2985075.0,
+                  "VPP": 1.6,
+                  "vrms_ac_v": 0.5484643712298314,
+                  "measured_dbm": 7.793268369481464,
+                  "vpp_sine_dbm": 8.061799739838873
+                }
+              ],
+              "setting_vpp": 3.0,
+              "scope_scale_v_div": 0.5
+            }
+          ]
+        },
+        {
+          "frequency_hz": 4000000.0,
+          "points": [
+            {
+              "vrms_ac_v": 0.10446822964425685,
+              "measured_dbm": -6.610015342173179,
+              "vpp_v": 0.3,
+              "dc_v": -0.006180604,
+              "vpp_sine_dbm": -6.478174818886375,
+              "frequency_measured_hz": 4000000.0,
+              "repeatability_db": 0.007380183920372652,
+              "readings": [
+                {
+                  "VRMS": 0.1047304,
+                  "VAVG": -0.006053498,
+                  "FREQuency": 4000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10455530520315072,
+                  "measured_dbm": -6.602778561501294,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1046509,
+                  "VAVG": -0.006180604,
+                  "FREQuency": 4000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10446822964425685,
+                  "measured_dbm": -6.610015342173179,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.10466,
+                  "VAVG": -0.006361207,
+                  "FREQuency": 4000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10446650489751799,
+                  "measured_dbm": -6.610158745421667,
+                  "vpp_sine_dbm": -6.478174818886375
+                }
+              ],
+              "setting_vpp": 0.6,
+              "scope_scale_v_div": 0.1
+            },
+            {
+              "vrms_ac_v": 0.5476290554370208,
+              "measured_dbm": 7.780029603483312,
+              "vpp_v": 1.58,
+              "dc_v": -0.02158859,
+              "vpp_sine_dbm": 7.9525418258088285,
+              "frequency_measured_hz": 4000000.0,
+              "repeatability_db": 0.007335820956276606,
+              "readings": [
+                {
+                  "VRMS": 0.548424,
+                  "VAVG": -0.02001678,
+                  "FREQuency": 3921569.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5480585847283406,
+                  "measured_dbm": 7.786839654222359,
+                  "vpp_sine_dbm": 7.9525418258088285
+                },
+                {
+                  "VRMS": 0.5480213,
+                  "VAVG": -0.02158859,
+                  "FREQuency": 4000000.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5475959076139101,
+                  "measured_dbm": 7.779503833266082,
+                  "vpp_sine_dbm": 7.9525418258088285
+                },
+                {
+                  "VRMS": 0.5481775,
+                  "VAVG": -0.02451508,
+                  "FREQuency": 4000000.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5476290554370208,
+                  "measured_dbm": 7.780029603483312,
+                  "vpp_sine_dbm": 7.9525418258088285
+                }
+              ],
+              "setting_vpp": 3.0,
+              "scope_scale_v_div": 0.5
+            }
+          ]
+        },
+        {
+          "frequency_hz": 5000000.0,
+          "points": [
+            {
+              "vrms_ac_v": 0.10409322334597503,
+              "measured_dbm": -6.641250901611726,
+              "vpp_v": 0.3,
+              "dc_v": -0.006511719,
+              "vpp_sine_dbm": -6.478174818886375,
+              "frequency_measured_hz": 5000000.0,
+              "repeatability_db": 0.014999216847681573,
+              "readings": [
+                {
+                  "VRMS": 0.1042967,
+                  "VAVG": -0.006511719,
+                  "FREQuency": 5000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10409322334597503,
+                  "measured_dbm": -6.641250901611726,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1043753,
+                  "VAVG": -0.006568573,
+                  "FREQuency": 5000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10416840739319033,
+                  "measured_dbm": -6.634979555682983,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1041657,
+                  "VAVG": -0.006070221,
+                  "FREQuency": 5000000.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.1039886795449445,
+                  "measured_dbm": -6.649978772530664,
+                  "vpp_sine_dbm": -6.478174818886375
+                }
+              ],
+              "setting_vpp": 0.6,
+              "scope_scale_v_div": 0.1
+            },
+            {
+              "vrms_ac_v": 0.5454432932653952,
+              "measured_dbm": 7.745292077965892,
+              "vpp_v": 1.58,
+              "dc_v": -0.02088623,
+              "vpp_sine_dbm": 7.9525418258088285,
+              "frequency_measured_hz": 5000000.0,
+              "repeatability_db": 0.012780745233470725,
+              "readings": [
+                {
+                  "VRMS": 0.5465704,
+                  "VAVG": -0.02354507,
+                  "FREQuency": 5000000.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5460630291778186,
+                  "measured_dbm": 7.755155435067568,
+                  "vpp_sine_dbm": 7.9525418258088285
+                },
+                {
+                  "VRMS": 0.5457822,
+                  "VAVG": -0.0192308,
+                  "FREQuency": 5000000.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5454432932653952,
+                  "measured_dbm": 7.745292077965892,
+                  "vpp_sine_dbm": 7.9525418258088285
+                },
+                {
+                  "VRMS": 0.54566,
+                  "VAVG": -0.02088623,
+                  "FREQuency": 5000000.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5452601223236365,
+                  "measured_dbm": 7.742374689834097,
+                  "vpp_sine_dbm": 7.9525418258088285
+                }
+              ],
+              "setting_vpp": 3.0,
+              "scope_scale_v_div": 0.5
+            }
+          ]
+        },
+        {
+          "frequency_hz": 6000000.0,
+          "points": [
+            {
+              "vrms_ac_v": 0.10307726149059195,
+              "measured_dbm": -6.726442605449718,
+              "vpp_v": 0.3,
+              "dc_v": -0.006317719,
+              "vpp_sine_dbm": -6.478174818886375,
+              "frequency_measured_hz": 6024096.0,
+              "repeatability_db": 0.03474697637850266,
+              "readings": [
+                {
+                  "VRMS": 0.1036,
+                  "VAVG": -0.006317719,
+                  "FREQuency": 5952381.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10340718749988823,
+                  "measured_dbm": -6.698685519061439,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1031906,
+                  "VAVG": -0.006361207,
+                  "FREQuency": 6024096.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10299434437804413,
+                  "measured_dbm": -6.733432495439942,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1032646,
+                  "VAVG": -0.006217377,
+                  "FREQuency": 6024096.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10307726149059195,
+                  "measured_dbm": -6.726442605449718,
+                  "vpp_sine_dbm": -6.478174818886375
+                }
+              ],
+              "setting_vpp": 0.6,
+              "scope_scale_v_div": 0.1
+            },
+            {
+              "vrms_ac_v": 0.5406918748448477,
+              "measured_dbm": 7.669296823404361,
+              "vpp_v": 1.58,
+              "dc_v": -0.02354507,
+              "vpp_sine_dbm": 7.9525418258088285,
+              "frequency_measured_hz": 6024096.0,
+              "repeatability_db": 0.010208843622117492,
+              "readings": [
+                {
+                  "VRMS": 0.5408457,
+                  "VAVG": -0.02354507,
+                  "FREQuency": 6024096.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5403329537305541,
+                  "measured_dbm": 7.663529057078049,
+                  "vpp_sine_dbm": 7.9525418258088285
+                },
+                {
+                  "VRMS": 0.5410506,
+                  "VAVG": -0.01969894,
+                  "FREQuency": 6024096.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5406918748448477,
+                  "measured_dbm": 7.669296823404361,
+                  "vpp_sine_dbm": 7.9525418258088285
+                },
+                {
+                  "VRMS": 0.5415168,
+                  "VAVG": -0.02436462,
+                  "FREQuency": 5952381.0,
+                  "VPP": 1.58,
+                  "vrms_ac_v": 0.5409684001626117,
+                  "measured_dbm": 7.673737900700167,
+                  "vpp_sine_dbm": 7.9525418258088285
+                }
+              ],
+              "setting_vpp": 3.0,
+              "scope_scale_v_div": 0.5
+            }
+          ]
+        },
+        {
+          "frequency_hz": 7000000.0,
+          "points": [
+            {
+              "vrms_ac_v": 0.10348660632165126,
+              "measured_dbm": -6.692017139675484,
+              "vpp_v": 0.3,
+              "dc_v": -0.006401337,
+              "vpp_sine_dbm": -6.478174818886375,
+              "frequency_measured_hz": 6944445.0,
+              "repeatability_db": 0.016264674043204863,
+              "readings": [
+                {
+                  "VRMS": 0.1036844,
+                  "VAVG": -0.006401337,
+                  "FREQuency": 7042254.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10348660632165126,
+                  "measured_dbm": -6.692017139675484,
+                  "vpp_sine_dbm": -6.478174818886375
+                },
+                {
+                  "VRMS": 0.1035447,
+                  "VAVG": -0.006277588,
+                  "FREQuency": 6944445.0,
+                  "VPP": 0.296,
+                  "vrms_ac_v": 0.10335422965216401,
+                  "measured_dbm": -6.703134956845302,
+                  "vpp_sine_dbm": -6.594765692100854
+                },
+                {
+                  "VRMS": 0.1037479,
+                  "VAVG": -0.006438141,
+                  "FREQuency": 6944445.0,
+                  "VPP": 0.3,
+                  "vrms_ac_v": 0.10354794587472085,
+                  "measured_dbm": -6.686870282802097,
+                  "vpp_sine_dbm": -6.478174818886375
+                }
+              ],
+              "setting_vpp": 0.6,
+              "scope_scale_v_div": 0.1
+            }
+          ]
+        }
+      ]
+    },
+    "2": {
+      "scope_channel": 3,
+      "curves": []
+    }
+  },
+  "device": {
+    "device_type": 15,
+    "serial_number": 1816400000,
+    "baudrate": 115200,
+    "max_sine_hz": 15000000.0,
+    "backend": "on1arf Python library with bounded serial transport"
+  },
+  "calibration_id": "jds2800-1816400000-50ohm-2026-10-03T20:29:24.009421+00:00",
+  "initial_state": {
+    "mode": "WAVE_CH1",
+    "phase_deg": 0.0,
+    "channels": [
+      {
+        "channel": 1,
+        "enabled": false,
+        "waveform": "SINE",
+        "waveform_id": 0,
+        "frequency_hz": 15000000.0,
+        "amplitude_vpp": 1.354,
+        "offset_v": 0.0,
+        "duty_percent": 50.0
+      },
+      {
+        "channel": 2,
+        "enabled": false,
+        "waveform": "SINE",
+        "waveform_id": 0,
+        "frequency_hz": 14500000.0,
+        "amplitude_vpp": 0.605,
+        "offset_v": 0.0,
+        "duty_percent": 50.0
+      }
+    ]
+  },
+  "scope_info": "IDN:           RIGOL TECHNOLOGIES,DS1104Z,DS1ZA225013504,00.04.04.SP4\nTimebase:      1.0000000e-07 s/div  offset 0.0000000e+00 s\nSample rate:   5.000000e+08 Sa/s\nMemory depth:  AUTO pts\nTrigger:       status=AUTO sweep=AUTO src=CHAN3 slope=POS level=0.000000e+00 V\nChannels:\n  CH1: ON   2.000000e-01 V/div  offset 0.000000e+00 V  DC  probe 1.000000e+00x\n  CH2: off  5.000000e+00 V/div  offset 0.000000e+00 V  DC  probe 1.000000e+01x\n  CH3: ON   1.000000e-01 V/div  offset 0.000000e+00 V  DC  probe 1.000000e+00x\n  CH4: off  5.000000e+00 V/div  offset 0.000000e+00 V  DC  probe 1.000000e+01x",
+  "error": "configure_channel: [TextContent(type='text', text='Error executing tool configure_channel: Configuration failed; channel 1 was requested OFF. Check state before continuing: Readback mismatch for frequency_hz: requested 7000000.0, received 0.0', annotations=None, meta=None)]",
+  "final_state": {
+    "mode": "WAVE_CH1",
+    "phase_deg": 0.0,
+    "channels": [
+      {
+        "channel": 1,
+        "enabled": false,
+        "waveform": "SINE",
+        "waveform_id": 0,
+        "frequency_hz": 0.0,
+        "amplitude_vpp": 3.0,
+        "offset_v": 0.0,
+        "duty_percent": 50.0
+      },
+      {
+        "channel": 2,
+        "enabled": false,
+        "waveform": "SINE",
+        "waveform_id": 0,
+        "frequency_hz": 14500000.0,
+        "amplitude_vpp": 0.605,
+        "offset_v": 0.0,
+        "duty_percent": 50.0
+      }
+    ]
+  }
+}

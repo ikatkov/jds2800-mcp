@@ -1,0 +1,26 @@
+{
+  "mode": "WAVE_CH1",
+  "phase_deg": 0.0,
+  "channels": [
+    {
+      "channel": 1,
+      "enabled": true,
+      "waveform": "TRIANGLE",
+      "waveform_id": 3,
+      "frequency_hz": 15000000.0,
+      "amplitude_vpp": 2.0,
+      "offset_v": 1.0,
+      "duty_percent": 50.0
+    },
+    {
+      "channel": 2,
+      "enabled": true,
+      "waveform": "PULSE",
+      "waveform_id": 2,
+      "frequency_hz": 2000.0,
+      "amplitude_vpp": 1.0,
+      "offset_v": 0.0,
+      "duty_percent": 30.0
+    }
+  ]
+}

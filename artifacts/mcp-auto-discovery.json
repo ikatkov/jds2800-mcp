@@ -1,0 +1,344 @@
+{
+  "server": {
+    "name": "JDS2800",
+    "title": null,
+    "version": "1.30.0",
+    "websiteUrl": null,
+    "icons": null
+  },
+  "tools": [
+    "list_ports",
+    "list_waveforms",
+    "get_device_info",
+    "get_state",
+    "configure_channel",
+    "set_outputs",
+    "set_phase",
+    "set_mode",
+    "configure_sweep",
+    "stop_outputs",
+    "read_register",
+    "read_arbitrary",
+    "upload_arbitrary"
+  ],
+  "results": {
+    "list_waveforms": {
+      "result": [
+        {
+          "id": 0,
+          "name": "SINE"
+        },
+        {
+          "id": 1,
+          "name": "SQUARE"
+        },
+        {
+          "id": 2,
+          "name": "PULSE"
+        },
+        {
+          "id": 3,
+          "name": "TRIANGLE"
+        },
+        {
+          "id": 4,
+          "name": "PARTIALSINE"
+        },
+        {
+          "id": 5,
+          "name": "CMOS"
+        },
+        {
+          "id": 6,
+          "name": "DC"
+        },
+        {
+          "id": 7,
+          "name": "HALF-WAVE"
+        },
+        {
+          "id": 8,
+          "name": "FULL-WAVE"
+        },
+        {
+          "id": 9,
+          "name": "POS-LADDER"
+        },
+        {
+          "id": 10,
+          "name": "NEG-LADDER"
+        },
+        {
+          "id": 11,
+          "name": "NOISE"
+        },
+        {
+          "id": 12,
+          "name": "EXP-RIZE"
+        },
+        {
+          "id": 13,
+          "name": "EXP-DECAY"
+        },
+        {
+          "id": 14,
+          "name": "MULTI-TONE"
+        },
+        {
+          "id": 15,
+          "name": "SINC"
+        },
+        {
+          "id": 16,
+          "name": "LORENZ"
+        },
+        {
+          "id": 101,
+          "name": "ARBITRARY01"
+        },
+        {
+          "id": 102,
+          "name": "ARBITRARY02"
+        },
+        {
+          "id": 103,
+          "name": "ARBITRARY03"
+        },
+        {
+          "id": 104,
+          "name": "ARBITRARY04"
+        },
+        {
+          "id": 105,
+          "name": "ARBITRARY05"
+        },
+        {
+          "id": 106,
+          "name": "ARBITRARY06"
+        },
+        {
+          "id": 107,
+          "name": "ARBITRARY07"
+        },
+        {
+          "id": 108,
+          "name": "ARBITRARY08"
+        },
+        {
+          "id": 109,
+          "name": "ARBITRARY09"
+        },
+        {
+          "id": 110,
+          "name": "ARBITRARY10"
+        },
+        {
+          "id": 111,
+          "name": "ARBITRARY11"
+        },
+        {
+          "id": 112,
+          "name": "ARBITRARY12"
+        },
+        {
+          "id": 113,
+          "name": "ARBITRARY13"
+        },
+        {
+          "id": 114,
+          "name": "ARBITRARY14"
+        },
+        {
+          "id": 115,
+          "name": "ARBITRARY15"
+        },
+        {
+          "id": 116,
+          "name": "ARBITRARY16"
+        },
+        {
+          "id": 117,
+          "name": "ARBITRARY17"
+        },
+        {
+          "id": 118,
+          "name": "ARBITRARY18"
+        },
+        {
+          "id": 119,
+          "name": "ARBITRARY19"
+        },
+        {
+          "id": 120,
+          "name": "ARBITRARY20"
+        },
+        {
+          "id": 121,
+          "name": "ARBITRARY21"
+        },
+        {
+          "id": 122,
+          "name": "ARBITRARY22"
+        },
+        {
+          "id": 123,
+          "name": "ARBITRARY23"
+        },
+        {
+          "id": 124,
+          "name": "ARBITRARY24"
+        },
+        {
+          "id": 125,
+          "name": "ARBITRARY25"
+        },
+        {
+          "id": 126,
+          "name": "ARBITRARY26"
+        },
+        {
+          "id": 127,
+          "name": "ARBITRARY27"
+        },
+        {
+          "id": 128,
+          "name": "ARBITRARY28"
+        },
+        {
+          "id": 129,
+          "name": "ARBITRARY29"
+        },
+        {
+          "id": 130,
+          "name": "ARBITRARY30"
+        },
+        {
+          "id": 131,
+          "name": "ARBITRARY31"
+        },
+        {
+          "id": 132,
+          "name": "ARBITRARY32"
+        },
+        {
+          "id": 133,
+          "name": "ARBITRARY33"
+        },
+        {
+          "id": 134,
+          "name": "ARBITRARY34"
+        },
+        {
+          "id": 135,
+          "name": "ARBITRARY35"
+        },
+        {
+          "id": 136,
+          "name": "ARBITRARY36"
+        },
+        {
+          "id": 137,
+          "name": "ARBITRARY37"
+        },
+        {
+          "id": 138,
+          "name": "ARBITRARY38"
+        },
+        {
+          "id": 139,
+          "name": "ARBITRARY39"
+        },
+        {
+          "id": 140,
+          "name": "ARBITRARY40"
+        },
+        {
+          "id": 141,
+          "name": "ARBITRARY41"
+        },
+        {
+          "id": 142,
+          "name": "ARBITRARY42"
+        },
+        {
+          "id": 143,
+          "name": "ARBITRARY43"
+        },
+        {
+          "id": 144,
+          "name": "ARBITRARY44"
+        },
+        {
+          "id": 145,
+          "name": "ARBITRARY45"
+        },
+        {
+          "id": 146,
+          "name": "ARBITRARY46"
+        },
+        {
+          "id": 147,
+          "name": "ARBITRARY47"
+        },
+        {
+          "id": 148,
+          "name": "ARBITRARY48"
+        },
+        {
+          "id": 149,
+          "name": "ARBITRARY49"
+        },
+        {
+          "id": 150,
+          "name": "ARBITRARY50"
+        },
+        {
+          "id": 151,
+          "name": "ARBITRARY51"
+        },
+        {
+          "id": 152,
+          "name": "ARBITRARY52"
+        },
+        {
+          "id": 153,
+          "name": "ARBITRARY53"
+        },
+        {
+          "id": 154,
+          "name": "ARBITRARY54"
+        },
+        {
+          "id": 155,
+          "name": "ARBITRARY55"
+        },
+        {
+          "id": 156,
+          "name": "ARBITRARY56"
+        },
+        {
+          "id": 157,
+          "name": "ARBITRARY57"
+        },
+        {
+          "id": 158,
+          "name": "ARBITRARY58"
+        },
+        {
+          "id": 159,
+          "name": "ARBITRARY59"
+        },
+        {
+          "id": 160,
+          "name": "ARBITRARY60"
+        }
+      ]
+    },
+    "get_device_info": [
+      "{\n  \"device_type\": 15,\n  \"serial_number\": 1816400000,\n  \"baudrate\": 115200,\n  \"max_sine_hz\": 15000000.0,\n  \"backend\": \"on1arf Python library with bounded serial transport\"\n}"
+    ],
+    "get_state": [
+      "{\n  \"mode\": \"WAVE_CH1\",\n  \"phase_deg\": 0.0,\n  \"channels\": [\n    {\n      \"channel\": 1,\n      \"enabled\": false,\n      \"waveform\": \"TRIANGLE\",\n      \"waveform_id\": 3,\n      \"frequency_hz\": 1000.0,\n      \"amplitude_vpp\": 2.0,\n      \"offset_v\": 1.0,\n      \"duty_percent\": 50.0\n    },\n    {\n      \"channel\": 2,\n      \"enabled\": false,\n      \"waveform\": \"PULSE\",\n      \"waveform_id\": 2,\n      \"frequency_hz\": 2000.0,\n      \"amplitude_vpp\": 1.0,\n      \"offset_v\": 0.0,\n      \"duty_percent\": 30.0\n    }\n  ]\n}"
+    ]
+  }
+}

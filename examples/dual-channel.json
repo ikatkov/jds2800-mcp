@@ -1,0 +1,14 @@
+[
+  {"operation": "stop_outputs"},
+  {"operation": "set_mode", "arguments": {"mode": "WAVE_CH1"}},
+  {"operation": "configure_channel", "arguments": {
+    "channel": 1, "waveform": "SINE", "frequency_hz": 1000,
+    "amplitude_vpp": 2, "offset_v": 0, "duty_percent": 50
+  }},
+  {"operation": "configure_channel", "arguments": {
+    "channel": 2, "waveform": "PULSE", "frequency_hz": 2000,
+    "amplitude_vpp": 1, "offset_v": 0, "duty_percent": 30
+  }},
+  {"operation": "set_outputs", "arguments": {"ch1": true, "ch2": true}},
+  {"operation": "get_state"}
+]

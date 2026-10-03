@@ -1,0 +1,91 @@
+{
+  "calibration_id": "jds2800-1816400000-50ohm-eac8e4501026",
+  "created_at": "2026-10-03T20:02:15.471695+00:00",
+  "device": {
+    "device_type": 15,
+    "serial_number": 1816400000,
+    "baudrate": 115200,
+    "max_sine_hz": 15000000.0,
+    "backend": "on1arf Python library with bounded serial transport"
+  },
+  "load_ohms": 50,
+  "waveform": "SINE",
+  "offset_v": 0,
+  "measurement_plane": "Scope input after the existing direct coax cables; cable loss included",
+  "method": "Median of three numeric scope readings; AC RMS = sqrt(VRMS^2 - VAVG^2). Acquisition by source: AVER16, NORM. Numeric Vpp retained.",
+  "channels": {
+    "1": {
+      "frequencies_hz": [
+        1000000.0,
+        2000000.0,
+        3000000.0,
+        4000000.0,
+        5000000.0,
+        6000000.0,
+        7000000.0,
+        8000000.0,
+        9000000.0,
+        10000000.0,
+        10010000.0,
+        11000000.0,
+        12000000.0,
+        13000000.0,
+        14000000.0,
+        15000000.0
+      ],
+      "power_range_dbm_across_all_frequencies": [
+        -29.859488741101888,
+        11.445075960128523
+      ],
+      "points": 160
+    },
+    "2": {
+      "frequencies_hz": [
+        1000000.0,
+        2000000.0,
+        3000000.0,
+        4000000.0,
+        5000000.0,
+        6000000.0,
+        7000000.0,
+        8000000.0,
+        9000000.0,
+        10000000.0,
+        10010000.0,
+        11000000.0,
+        12000000.0,
+        13000000.0,
+        14000000.0,
+        15000000.0
+      ],
+      "power_range_dbm_across_all_frequencies": [
+        -29.984094573316753,
+        11.212640561661873
+      ],
+      "points": 160
+    }
+  },
+  "guide_uri": "jds2800://power-guide",
+  "limitations": "Scope-referenced AC power of a sine wave into physical 50-ohm loads. Includes measured cable loss; not a traceable absolute RF power calibration or a measurement of fundamental power alone.",
+  "verification": {
+    "passed": true,
+    "created_at": "2026-10-03T20:42:55.231253+00:00",
+    "checks": 72,
+    "additional_cli_scope_checks": 2,
+    "maximum_absolute_error_db": 0.19503701362790338,
+    "tolerance_db": 0.35,
+    "measurement_method": "Clear prior measurements; query numeric VRMS/VAVG/frequency/Vpp three times",
+    "requested_power_range_dbm": [
+      -25,
+      10
+    ],
+    "frequency_range_hz": [
+      1000000.0,
+      15000000.0
+    ],
+    "acquisition": "NORM",
+    "file": "artifacts/power-verification.json",
+    "sha256": "4df71076544493a8f328bec76b8a4e9de262db71e995662e4cb611aea8d3fc21",
+    "scope_referenced_only": true
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "generator_channel": 1,
+    "scope_channel": 1,
+    "setting_vpp": 1,
+    "frequency_hz": 1000000.0,
+    "source": "CHANnel1",
+    "measurements": {
+      "VPP": 0.504,
+      "VRMS": 0.1783741,
+      "PVRMS": 0.1776991,
+      "VAVG": -0.01395319,
+      "FREQuency": 1000000.0
+    }
+  },
+  {
+    "generator_channel": 2,
+    "scope_channel": 3,
+    "setting_vpp": 1,
+    "frequency_hz": 1000000.0,
+    "source": "CHANnel3",
+    "measurements": {
+      "VPP": 0.496,
+      "VRMS": 0.1756632,
+      "PVRMS": 0.1756824,
+      "VAVG": -0.01527091,
+      "FREQuency": 1000000.0
+    }
+  }
+]

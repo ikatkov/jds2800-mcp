@@ -1,0 +1,20 @@
+{
+  "1": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"source\": \"CHANnel1\",\n  \"measurements\": {\n    \"FREQuency\": 999.9999,\n    \"VPP\": 2.08,\n    \"VAVG\": -0.02712372,\n    \"VRMS\": 0.6991199\n  }\n}"
+      }
+    ],
+    "isError": false
+  },
+  "3": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"source\": \"CHANnel3\",\n  \"measurements\": {\n    \"FREQuency\": 2000.0,\n    \"VPP\": 1.08,\n    \"VAVG\": -0.0337291,\n    \"VRMS\": 0.3569937\n  }\n}"
+      }
+    ],
+    "isError": false
+  }
+}

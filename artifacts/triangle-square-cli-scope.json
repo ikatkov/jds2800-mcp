@@ -1,0 +1,20 @@
+{
+  "1": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"source\": \"CHANnel1\",\n  \"measurements\": {\n    \"FREQuency\": 999.9999,\n    \"VPP\": 2.1,\n    \"VAVG\": 1.013963,\n    \"PDUTy\": 0.496\n  }\n}"
+      }
+    ],
+    "isError": false
+  },
+  "3": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\n  \"source\": \"CHANnel3\",\n  \"measurements\": {\n    \"FREQuency\": 2000.0,\n    \"VPP\": 1.14,\n    \"VAVG\": -0.04672241,\n    \"PDUTy\": 0.5039999\n  }\n}"
+      }
+    ],
+    "isError": false
+  }
+}

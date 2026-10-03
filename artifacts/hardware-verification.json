@@ -1,0 +1,171 @@
+{
+  "timestamp_utc": "2026-10-03T17:05:00.291256+00:00",
+  "wiring": {
+    "generator_1": "scope_1",
+    "generator_2": "scope_3"
+  },
+  "tests": [
+    {
+      "name": "sine_scope_ch1",
+      "result": {
+        "source": "CHANnel1",
+        "measurements": {
+          "FREQuency": 999.9999,
+          "VPP": 2.1,
+          "VAVG": -0.02421402,
+          "VRMS": 0.701497
+        }
+      }
+    },
+    {
+      "name": "sine_scope_ch3",
+      "result": {
+        "source": "CHANnel3",
+        "measurements": {
+          "FREQuency": 2000.0,
+          "VPP": 1.08,
+          "VAVG": -0.03392975,
+          "VRMS": 0.3590628
+        }
+      }
+    },
+    {
+      "name": "cli_with_live_mcp",
+      "result": {
+        "mode": "WAVE_CH1",
+        "phase_deg": 0.0,
+        "channels": [
+          {
+            "channel": 1,
+            "enabled": true,
+            "waveform": "SINE",
+            "waveform_id": 0,
+            "frequency_hz": 1000.0,
+            "amplitude_vpp": 2.0,
+            "offset_v": 0.0,
+            "duty_percent": 50.0
+          },
+          {
+            "channel": 2,
+            "enabled": true,
+            "waveform": "SINE",
+            "waveform_id": 0,
+            "frequency_hz": 2000.0,
+            "amplitude_vpp": 1.0,
+            "offset_v": 0.0,
+            "duty_percent": 50.0
+          }
+        ]
+      }
+    },
+    {
+      "name": "triangle_offset",
+      "result": {
+        "source": "CHANnel1",
+        "measurements": {
+          "FREQuency": 996.016,
+          "VPP": 2.1,
+          "VAVG": 0.9980267
+        }
+      }
+    },
+    {
+      "name": "pulse_30_percent",
+      "result": {
+        "source": "CHANnel3",
+        "measurements": {
+          "FREQuency": 2000.0,
+          "VPP": 1.14,
+          "PDUTy": 0.304
+        }
+      }
+    },
+    {
+      "name": "negative_phase_readback",
+      "result": {
+        "phase_deg": 270.0
+      }
+    },
+    {
+      "name": "independent_outputs",
+      "off": {
+        "source": "CHANnel1",
+        "measurements": {
+          "VPP": 0.09999999
+        }
+      },
+      "on": {
+        "source": "CHANnel3",
+        "measurements": {
+          "FREQuency": 2000.0,
+          "VPP": 1.12
+        }
+      }
+    },
+    {
+      "name": "model_limit_no_mutation",
+      "passed": true
+    }
+  ],
+  "generator_info": {
+    "device_type": 15,
+    "serial_number": 1816400000,
+    "baudrate": 115200,
+    "max_sine_hz": 15000000.0,
+    "backend": "on1arf Python library with bounded serial transport"
+  },
+  "initial_generator_state": {
+    "mode": "WAVE_CH1",
+    "phase_deg": 0.0,
+    "channels": [
+      {
+        "channel": 1,
+        "enabled": false,
+        "waveform": "TRIANGLE",
+        "waveform_id": 3,
+        "frequency_hz": 1000.0,
+        "amplitude_vpp": 2.0,
+        "offset_v": 1.0,
+        "duty_percent": 50.0
+      },
+      {
+        "channel": 2,
+        "enabled": false,
+        "waveform": "PULSE",
+        "waveform_id": 2,
+        "frequency_hz": 2000.0,
+        "amplitude_vpp": 1.0,
+        "offset_v": 0.0,
+        "duty_percent": 30.0
+      }
+    ]
+  },
+  "scope_info": "IDN:           RIGOL TECHNOLOGIES,DS1104Z,DS1ZA225013504,00.04.04.SP4\nTimebase:      2.0000000e-04 s/div  offset 0.0000000e+00 s\nSample rate:   5.000000e+08 Sa/s\nMemory depth:  AUTO pts\nTrigger:       status=AUTO sweep=AUTO src=CHAN1 slope=POS level=0.000000e+00 V\nChannels:\n  CH1: ON   5.000000e-01 V/div  offset 0.000000e+00 V  DC  probe 1.000000e+00x\n  CH2: off  5.000000e+00 V/div  offset 0.000000e+00 V  DC  probe 1.000000e+01x\n  CH3: ON   5.000000e-01 V/div  offset 0.000000e+00 V  DC  probe 1.000000e+00x\n  CH4: off  5.000000e+00 V/div  offset 0.000000e+00 V  DC  probe 1.000000e+01x",
+  "passed": true,
+  "final_generator_state": {
+    "mode": "WAVE_CH1",
+    "phase_deg": 0.0,
+    "channels": [
+      {
+        "channel": 1,
+        "enabled": false,
+        "waveform": "TRIANGLE",
+        "waveform_id": 3,
+        "frequency_hz": 1000.0,
+        "amplitude_vpp": 2.0,
+        "offset_v": 1.0,
+        "duty_percent": 50.0
+      },
+      {
+        "channel": 2,
+        "enabled": false,
+        "waveform": "PULSE",
+        "waveform_id": 2,
+        "frequency_hz": 2000.0,
+        "amplitude_vpp": 1.0,
+        "offset_v": 0.0,
+        "duty_percent": 30.0
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "device_type": 15,
+  "serial_number": 1816400000,
+  "outputs": [
+    true,
+    false
+  ],
+  "mode": [
+    0,
+    "WAVE_CH1"
+  ],
+  "phase_deg": 0.0,
+  "channels": {
+    "1": {
+      "waveform": [
+        0,
+        "SINE"
+      ],
+      "frequency_hz": 10000000.0,
+      "amplitude_vpp": 0.25,
+      "offset_v": 0.0,
+      "duty_percent": 50.0
+    },
+    "2": {
+      "waveform": [
+        0,
+        "SINE"
+      ],
+      "frequency_hz": 5000.0,
+      "amplitude_vpp": 5.0,
+      "offset_v": 0.0,
+      "duty_percent": 50.0
+    }
+  }
+}

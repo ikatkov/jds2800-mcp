@@ -1,0 +1,30 @@
+{
+  "package": {
+    "wheel_resources": true,
+    "points": 320,
+    "verification_checks": 72,
+    "cli_scope_checks": 2
+  },
+  "mcp": {
+    "tools": 17,
+    "resources": 3,
+    "no_serial_connection": true
+  },
+  "unit_tests_passed": 90,
+  "lint": "passed",
+  "format": "passed",
+  "bundled_resources": [
+    "jds2800_mcp/docs/JDS2800-reference.md",
+    "jds2800_mcp/docs/JDS2800-power-calibration.md",
+    "jds2800_mcp/data/calibration.json"
+  ],
+  "wheel": "dist/jds2800_mcp-0.1.0-py3-none-any.whl",
+  "portable_checkout": {
+    "fresh_checkout_install": "passed",
+    "mcp_tools": 17,
+    "resources": 3,
+    "calibration_points": 320,
+    "hardware_opened": false
+  },
+  "publication_scan": "passed: staged files, wheel, and source archive"
+}
